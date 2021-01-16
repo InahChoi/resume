@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Hachi+Maru+Pop&family=Lobster&family=Noto+Sans+KR&display=swap');
+/*
+font-family: 'Fredoka One', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+
+body, html {height:100%; box-sizing: border-box; margin:0; list-style: none; font-family: 'Noto Sans KR', sans-serif;}
+
+html {scroll-behavior: smooth;}
+
+header{display: grid; grid-auto-flow: column; grid-template-columns:1fr ; width:100%; text-align: left; box-shadow: 10px 10px 10px #e6e6e6; position: fixed; background-color:#fff; top:0; left:0; right:0; font-family: 'Lobster', cursive;}
+header > h1{font-size:40px; color:#28cdc8; padding:5px 0 20px 30px; margin:0; display: inline-block;}
+
+.nav{display: inline-block;}
+.nav > li {list-style: none; display: inline-block; padding:10px 30px 0 0;}
+.nav > li > a {font-size: 20px; color:#28cdc8;}
+
+a:link{text-decoration: none;}
+a:visited {color:#000;}
+.intro_a:visited {color:#28cdc8;}
+li > a:hover{color:#17ada9;}
+
+#scroll_intro {text-align: center; width:80%; height:1000px;margin: 0 auto;}
+#scroll_intro > h2 {margin:50px; font-size:35px; color:#28cdc8;}
+#scroll_intro > div {display: inline-block; width:30%; height:500px; font-size:25px; }
+#scroll_intro > span{display: block; width:100%;height:150px;}
+#scroll_intro > div> img{width:400px; height:400px;}
+
+
+#scroll_profile {width:80%; height:700px; margin:50px auto;}
+#scroll_profile > span{display: block; width:100%;height:150px;}
+.profile_img {width:50%; float:left;}
+.profile_table {width:50%; float:left; margin-top:30px}
+.profile_table > h3 {font-size:30px;}
+.profile_table > table tr {font-size:20px; }
+.favorite > td > img {width:160px; clear: both;}
+.favorite > td > p {text-align: center;}
+
+#scroll_contact{width:80%; height:900px; margin: 50px auto;}
+#scroll_contact > span {display: block; width:100%;height:200px;}
+#scroll_contact > div {width:50%; height:600px; float: left;}
+#scroll_contact > div > h3 {font-size:40px; padding-bottom:35px;}
+#scroll_contact > div > h3 ~ p {font-size:20px; line-height: 1.7; margin-bottom: 130px;}
+i {color:#28cdc8; font-size:40px; padding:10px;}
+
+.contact_img{position: relative;}
+.contact_img2 {position:fixed; right:280px; z-index: 1;
+animation-name:img;
+animation: img 5s infinite;
+animation-timing-function: ease-in-out;
+}
+@keyframes img {
+    0%   {top:0;}
+    50%  {top:30px;}
+    100%  {top:0;}
+}
