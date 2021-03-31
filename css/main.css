@@ -23,6 +23,11 @@ h2 {font-size:3rem; margin:5rem 0 2rem; line-height: 0.5;}
 .project_article {margin:7rem 0 7rem 0;}
 .project_article > ul {padding-bottom: 2rem;}
 .project_article > ul > li { list-style: none; line-height: 2.5;}
+
+.contact_article {margin-top:10rem;}
+.contact_article > p > span { font-size:1.5rem; font-weight: 800;}
+.contact_flex {display: flex;}
+.contact_flex > a > img {width:60px;}
 h3 {font-size:2.5rem; line-height: 0;}
 h4 {font-size:1.6rem;}
 h5 {font-size:1.3rem;}
