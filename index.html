@@ -18,7 +18,7 @@
                     백엔드 개발자님이 하시는 개발과 사랑에 빠져
                     위코드를 알게 되었습니다.
                 </p>
-                <p>파이썬을 좋아하고, Go언어와 JavaScript에 관심이 있습니다.
+                <p>파이썬의 파이써닉한 문법을 좋아하고
                     회사와 팀에 도움이 되는 일을 좋아하며, 개발자들의 협업 문화를 사랑합니다.
                     제가 하는 개발이 사용자로 하여금
                     조금이라도 편의를 주는 것에 희열을 느낍니다.
@@ -30,24 +30,36 @@
             <h2>Skills <i class="fas fa-circle"></i></h2>
             <p>프로젝트 혹은 사용했던 기술들입니다.</p>
             <div class="flex_container">
-                <article>
+                <article class="skill_article">
                     <p>Main Stack</p>
-                    <img src="imgaes/python.png" alt="Python">
-                    <img src="imgaes/django.png" alt="Django">
+                    <img src="images/python.png" alt="Python">
+                    <img src="images/django.png" alt="Django">
+                    <p>파이썬의 자료형과 조건문, 루프 등을 이해하고 프로젝트에 적용할 수 있습니다.</p>
+                    <p>장고의 MTV패턴을 이해하고 실제 프로젝트를 진행할 수 있습니다.</p>
                 </article>
 
-                <article>
+                <article class="skill_article">
                     <p>Sub Stack</p>
-                    <img src="imgaes/html5.png" alt="HTML5">
-                    <img src="imgaes/css3.png" alt="CSS3">
+                    <img src="images/html5.png" alt="HTML5">
+                    <img src="images/css3.png" alt="CSS3">
+                    <p>웹 퍼블리셔일 때에 사용했던 기술입니다.</p>                    
                 </article>
 
-                <article>
+                <article class="skill_article">
                     <p>Devops</p>
-                    <img src="imgaes/mysql.png" alt="MySQL">
-                    <img src="imgaes/aws.png" alt="AWS">
+                    <img src="images/mysql.png" alt="MySQL">
+                    <img src="images/aws.png" alt="AWS">
+                    <p>MySQL의 쿼리문을 이해하고 적용할 수 있습니다.</p>
+                    <p>aws의 EC2, RDS를 통해 프로젝트를 배포한 경험이 있습니다.</p>
                 </article>
             </div>
+            <div class="flex_container border">
+                <article class="skill_article">
+                    <p>협업 Tools</p>
+                    <img src="images/slack.png" alt="Slack">
+                    <img src="images/trello.png" alt="Trello">
+                    <img src="images/notion.png" alt="Notion">
+                </article>
         </section>
 
         <section class="experience_section">
@@ -61,7 +73,10 @@
             <h2>Clone Projects <i class="fas fa-circle"></i></h2>
                 <p>클론 프로젝트는 순수 개발시간의 비중을 높이기 위해 이미 서비스 중인 사이트의
                 기획이나 디자인을 클론하여 진행하는 것입니다.
-                진행한 프로젝트는 Clone Coding 프로젝트로, 로직이나 구현방법은 직접 코딩하였습니다.</p>
+                Scrum의 진행과정을 이해하며 진행한 프로젝트들로,
+                로직이나 구현방법을 직접 코딩하였습니다.</p>
+                <p>진행했던 프로젝트들은 프로젝트 서비스 사용자 모집하여 추려진 피드백을 토대로 리팩토링을
+                진행하기로 하였습니다.</p>
 
             <article class="project_article">
                 <h3>WatCha Project</h3>
@@ -70,7 +85,10 @@
                 <ul>
                     <h5><i class="fas fa-check-circle"></i> User API 개발</h5>
                     <li>정규식 적용하여 회원가입, 로그인 API 로직 구현</li>
+                    <li>회원가입 시 bcrypt로 암호화하여 database에 저장</li>
                     <li>jwt를 이용한 인증&인가 과정 구현</li>
+                    <li>영화에 대한 리뷰와 리뷰에 대한 좋아요 기능 구현</li>
+                    <li>사용자가 리뷰를 작성할 때 사용자를 확인하는 데코레이터 기능 구현</li>
                 </ul>
             </article>
 
@@ -80,13 +98,15 @@
                 <h4>개발 상세</h4>
                 <ul>
                     <h5><i class="fas fa-check-circle"></i> Product API 개발</h5>
-                    <li>Front에 보내줄 Product List 로직 구현</li>
-                    <li>상품 상세에 쓰이는 Product Detail 로직 구현</li>
+                    <li>Product 조건별 필터링하여 데이터 전달</li>
+                    <li>필요한 Product의 요소별로 Product List 로직 구현</li>
+                    <li>코드 리뷰를 받고 List comprehension으로 코드 리팩토링</li>
+                    <li>상품 상세에 쓰이는 Product Detail 로직을 Path parameter로 RESTful하게 구현</li>
                 </ul>
 
                 <ul>
                     <h5><i class="fas fa-check-circle"></i> Data Excel Import/Export기능 개발</h5>
-                    <li>scv파일 생성하여 Python으로 MySQL에 데이터 추가</li>
+                    <li>csv파일 생성하여 Python으로 MySQL에 데이터 추가</li>
                 </ul>
             </article>
         </section>
@@ -97,8 +117,8 @@
                 <p><span>PhoneNumber</span> 010.9402.6454</p>
                 <p><span>Email</span> hyejooworld@gmail.com </p>
                 <div class="contact_flex">
-                    <a href="https://github.com/InahChoi" target="_blank"><img src="imgaes/github2.png" alt="github"></a>
-                    <a href="https://velog.io/@inah-_-" title="velog 구경가기" target="_blank"><img src="imgaes/velog.jpeg" alt="velog"></a>
+                    <a href="https://github.com/InahChoi" target="_blank"><img src="images/github2.png" alt="github"></a>
+                    <a href="https://velog.io/@inah-_-" title="velog 구경가기" target="_blank"><img src="images/velog.jpeg" alt="velog"></a>
                 </div>
             </article>
         </section>
