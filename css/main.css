@@ -15,7 +15,8 @@ section {padding: 0 2rem;}
 .flex_container{display: flex; padding-bottom: 4rem;}
 .border {border-bottom: 1px solid #eee;}
 .skill_article {font-size:0.8rem; width:33.3%; padding:0 1rem;}
-.skill_article > img {max-width:70px;}
+.skill_img_div {height:150px;}
+.skill_img_div > img {max-width:70px;}
 
 h2 {font-size:3rem; margin:5rem 0 2rem 0; line-height: 0.5;}
 .fa-circle {font-size:0.3rem; padding-right:1rem;}
