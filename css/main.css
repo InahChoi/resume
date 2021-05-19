@@ -9,7 +9,7 @@ header > h1 {font-size:2rem; font-weight: 400; line-height: 0;}
 
 .container{width:100%; max-width: 50rem; margin:auto;}
 h1 {font-size:4rem; line-height: 1.1; padding-top:5rem;}
-.paragraph{font-size:2rem; line-height: 1.5; font-weight: 300; padding-bottom: 2rem; border-bottom: 1px solid #eee;}
+.paragraph{font-size:1.7rem; line-height: 1.7; font-weight: 300; padding-bottom: 2rem; border-bottom: 1px solid #eee;}
 section {padding: 0 2rem;}
 
 .flex_container{display: flex; padding-bottom: 4rem;}
