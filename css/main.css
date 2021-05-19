@@ -9,7 +9,7 @@ header > h1 {font-size:2rem; font-weight: 400; line-height: 0;}
 
 .container{width:100%; max-width: 50rem; margin:auto;}
 h1 {font-size:4rem; line-height: 1.1; padding-top:5rem;}
-.paragraph{font-size:2rem; line-height: 1.4; font-weight: 300; padding-bottom: 2rem; border-bottom: 1px solid #eee;}
+.paragraph{font-size:2rem; line-height: 1.5; font-weight: 300; padding-bottom: 2rem; border-bottom: 1px solid #eee;}
 section {padding: 0 2rem;}
 
 .flex_container{display: flex; padding-bottom: 4rem;}
@@ -17,10 +17,8 @@ section {padding: 0 2rem;}
 .skill_article {font-size:0.8rem; width:33.3%; padding:0 1rem;}
 .skill_article > img {max-width:70px;}
 
-
 h2 {font-size:3rem; margin:5rem 0 2rem 0; line-height: 0.5;}
-.fa-circle {font-size:0.7rem; }
-.fa-check-circle {font-size:1rem;}
+.fa-circle {font-size:0.3rem; padding-right:1rem;}
 .experience_section {margin:3rem 0; padding-bottom: 3rem; border-bottom: 1px solid #eee;}
 .project_section > p {padding-bottom: 3rem;}
 .project_article {margin:7rem 0 7rem 0;}
@@ -33,6 +31,4 @@ h2 {font-size:3rem; margin:5rem 0 2rem 0; line-height: 0.5;}
 .contact_flex > a > img {width:60px;}
 h3 {font-size:2.5rem; line-height: 0;}
 h4 {font-size:1.6rem;}
-h5 {font-size:1.5rem;}
-
-
+h5 {font-size:1.5rem; margin-block-end:0.5em;}
