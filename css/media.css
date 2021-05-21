@@ -1,0 +1,18 @@
+@media screen and (max-width: 960px){
+h1 {font-size:2.6rem; padding-top:1rem;}
+h2 {line-height:1.1; font-size:2.5rem;}
+h3 {font-size:2rem; }
+h5 {margin-block-start: 0;}
+section {padding:0 1.3rem;}
+.paragraph {font-size:1.4rem; line-height:1.4;}
+.flex_container{flex-direction:column; padding-bottom:0;}
+.skill_article {width:100%; padding-bottom:3rem;}
+.skill_img_div{height:auto;}
+.project_article {margin:3rem 0 3rem 0;}
+.project_article > ul {padding-inline-start:1rem;}
+.project_article > ul > li {line-height:1.5; padding:0 0 1rem 0;}
+.fas{display:none;}
+.contact_article {margin-top:5rem;}
+.contact_article > p > span {font-size:1rem;}
+.contact_flex > a > img {width:40px;}
+}
