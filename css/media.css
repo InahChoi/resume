@@ -7,6 +7,7 @@ section {padding:0 1.3rem;}
 .paragraph {font-size:1.4rem; line-height:1.4;}
 .flex_container{flex-direction:column; padding-bottom:0;}
 .skill_article {width:100%; padding-bottom:3rem;}
+.skill_article > ul {padding-inline-start:40px;}
 .skill_img_div{height:auto;}
 .project_article {margin:3rem 0 3rem 0;}
 .project_article > ul {padding-inline-start:1rem;}

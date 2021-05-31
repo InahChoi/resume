@@ -15,9 +15,13 @@ section {padding: 0 2rem;}
 .skill_article {font-size:0.8rem; width:33.3%; padding:0 1rem;}
 .skill_img_div {height:150px;}
 .skill_img_div > img {max-width:70px;}
+.skill_article > ul {padding-inline-start:0.5rem;}
+.skill_article > ul > li {padding-block-end:1rem;}
+.skill_string_div > ul > li {padding-block-end:1rem;}
 
 h2 {font-size:3rem; margin:5rem 0 2rem 0; line-height: 0.5;}
 .experience_section {margin:3rem 0; padding-bottom: 3rem; border-bottom: 1px solid #eee;}
+.experience_section > ul > li {line-height: 2.5;}
 .project_section > p {padding-bottom: 3rem;}
 .project_article {margin:7rem 0 7rem 0;}
 .project_article > ul {padding-bottom: 2rem;}
