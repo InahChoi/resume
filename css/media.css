@@ -1,19 +1,16 @@
 @media screen and (max-width: 960px){
-h1 {font-size:2.6rem; padding-top:1rem;}
-h2 {line-height:1.1; font-size:2.5rem;}
-h3 {font-size:2rem; }
-h5 {margin-block-start: 0;}
 section {padding:0 1.3rem;}
+article {padding:0; margin:3rem 0 5rem 0;}
+h1{font-size:3rem; padding:0;}
+h2 {font-size:2.5rem; line-height:1;}
+h3 {font-size:1.5rem;}
+ul {font-size:1rem;}
+li {margin: 0 0 1rem 0;}
+
 .paragraph {font-size:1.4rem; line-height:1.4;}
-.flex_container{flex-direction:column; padding-bottom:0;}
-.skill_article {width:100%; padding-bottom:3rem;}
-.skill_article > ul {padding-inline-start:40px;}
-.skill_img_div{height:auto;}
-.project_article {margin:3rem 0 3rem 0;}
-.project_article > ul {padding-inline-start:1rem;}
-.project_article > ul > li {line-height:1.5; padding:0 0 1rem 0;}
-.fas{display:none;}
-.contact_article {margin-top:5rem;}
+.skill_img_div > img {max-width: 60px;}
+
+.contact_article {margin-top:10rem;}
 .contact_article > p > span {font-size:1rem;}
 .contact_flex > a > img {width:40px;}
 }
