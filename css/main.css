@@ -9,14 +9,21 @@ h1 {font-size:4rem; line-height: 1.1; padding-top:5rem;}
 h2 {font-size:3rem; line-height: 0.5; margin:4rem 0 2rem;}
 h2::after {content: "."; color:#2871f8;}
 h3 {font-size:2rem;}
+h3::after {content: "."; color:#2871f8;}
 h4 {font-size:1.3rem;}
+a:link {text-decoration: none; color:#2871f8;}
+a:visited {color:#be6fff;}
+
 section {padding: 0 2rem;}
 article {width:100%; padding:3rem 0; border-bottom: 1px solid #eee;}
 ul {padding-inline-start:15px; margin:1.5rem 0 1rem; font-size:1.1rem; font-weight: 300;}
 li::marker {font-size:0.5rem; color:#2871f8;}
-li span {background-color: #2871f8; color:#fff;}
+li span {box-shadow: 0 -6px rgba(92, 136, 231, 0.3) inset;}
 .container {width:100%; max-width: 50rem; margin:auto;}
 .paragraph {font-size:2rem; line-height: 1.5; font-weight: 300; padding-bottom: 2rem;}
+
+.project_article h4 {margin-block-end: 0;}
+.project_article p {margin-block-start: 0.5rem;}
 
 .videowrapper {position:relative; padding-bottom:56.25%; padding-top:25px; height: 0;}
 .videowrapper iframe {position:absolute; top:0; left:0; width:100%; height: 100%;}
