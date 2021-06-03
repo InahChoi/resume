@@ -1,8 +1,8 @@
 @media screen and (max-width: 960px){
-section {padding:0 1.3rem;}
-article {padding:0; margin:3rem 0 5rem 0;}
-h1{font-size:3rem; padding:0;}
-h2 {font-size:2.5rem; line-height:1;}
+section {padding:0 2rem;}
+article {padding:1rem 0;}
+h1 {font-size:3rem; padding:0;}
+h2 {font-size:2.5rem; line-height:1; margin:4rem 0 1rem;}
 h3 {font-size:1.5rem;}
 ul {font-size:1rem;}
 li {margin: 0 0 1rem 0;}
@@ -10,7 +10,7 @@ li {margin: 0 0 1rem 0;}
 .paragraph {font-size:1.4rem; line-height:1.4;}
 .skill_img_div > img {max-width: 60px;}
 
-.contact_article {margin-top:10rem;}
+.contact_article {margin-top:5rem;}
 .contact_article > p > span {font-size:1rem;}
 .contact_flex > a > img {width:40px;}
 }
