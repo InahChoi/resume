@@ -30,5 +30,6 @@
 #### Infra
 `AWS EC2`, `AWS RDS`, `AWS Lambda`, `Nginx`, `AWS Load Balancer`, `PM2`
 
-#### Tools / ETC
-`Firebase Push`, `JWT`, `Winston`, `Supertest`, `EJS`
+---
+
+### 🏙 Experience.
