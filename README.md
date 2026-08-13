@@ -19,10 +19,13 @@
 
 ### 📟 Tech Stack.
 #### Backend
-`Node.js`, `Express`, `TypeScript`, `JavaScript`
+`Node.js`, `TypeScript`, `JavaScript`, `Python Django`, `PHP Laravel`
+
+#### Front
+`Ejs`, 
 
 #### Database
-`MariaDB`, `MongoDB`, `Sequelize`, `Mongoose`
+`MySQL`, `MongoDB`,
 
 #### Infra
 `AWS EC2`, `AWS RDS`, `AWS Lambda`, `Nginx`, `AWS Load Balancer`, `PM2`
