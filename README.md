@@ -19,17 +19,20 @@
 
 ### 📟 Tech Stack.
 #### Backend
-`Node.js`, `TypeScript`, `JavaScript`, `Python Django`, `PHP Laravel`
+`Node.js`, `TypeScript`, `JavaScript`, `Python Django`
 
 #### Front
-`Ejs`, 
+`Ejs`
 
-#### Database
-`MySQL`, `MongoDB`,
+#### Also
+`MongoDB`, `PHP` 
 
 #### Infra
-`AWS EC2`, `AWS RDS`, `AWS Lambda`, `Nginx`, `AWS Load Balancer`, `PM2`
+`AWS EC2`, `AWS RDS`, `AWS Lambda`, `AWS Load Balancer`
 
 ---
 
 ### 🏙 Experience.
+#### 주식회사 비스컨애드 | Fullstack Developer | 개발팀
+2026.02 - 현재
+
