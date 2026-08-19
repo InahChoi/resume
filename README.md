@@ -19,20 +19,24 @@
 
 ### 📟 Tech Stack.
 #### Backend
-`Node.js`, `TypeScript`, `JavaScript`, `Python Django`
+`Node.js` `TypeScript` `JavaScript` `Python Django`
 
 #### Front
 `Ejs`
 
 #### Also
-`MongoDB`, `PHP` 
+`MongoDB` `PHP` 
 
 #### Infra
-`AWS EC2`, `AWS RDS`, `AWS Lambda`, `AWS Load Balancer`
+`AWS EC2` `AWS RDS` `AWS Lambda` `AWS Load Balancer`
 
 ---
 
 ### 🏙 Experience.
 #### 주식회사 비스컨애드 | Fullstack Developer | 개발팀
 2026.02 - 현재
-
+##### 카페24 서버 인프라 AWS 마이그레이션
+- 기존 카페24 데이터베이스 RDS 재구축
+- 기존 카페24 웹호스팅 EC2 재구축
+- 기존 Pure PHP 코드 Node.js RESTful API 서버 화 및 EJS, Vue
+- RESTful API,
