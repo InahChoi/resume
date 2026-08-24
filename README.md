@@ -7,25 +7,12 @@
 
 ---
 
-### 📍 Core Strength.
-- Node.js 기반 REST API 설계, ejs 프론트 개발 및 운영
-- AWS EC2 / RDS / Lambda 인프라 운영
-- MariaDB / MongoDB 데이터 모델링
-- Firebase Push 및 예약 스케줄링 시스템 구축
-- 서비스 성능 개선 및 운영 안정화
-- 관리자 CMS 개발
-
----
-
 ### 📟 Tech Stack.
-#### Backend
-`Node.js` `TypeScript` `JavaScript` `Python Django`
-
-#### Front
-`Ejs`
+#### Core
+`Node.js` `TypeScript` `JavaScript` `EJS`
 
 #### Also
-`MongoDB` `PHP` 
+`Python Django` `MongoDB` `PHP`
 
 #### Infra
 `AWS EC2` `AWS RDS` `AWS Lambda` `AWS Load Balancer`
@@ -35,8 +22,23 @@
 ### 🏙 Experience.
 #### 주식회사 비스컨애드 | Fullstack Developer | 개발팀
 2026.02 - 현재
+##### 현장 결제 시스템 도입으로 매출 발생 기반 마련
+`Node.js` `JavaScript` `TypeScript` `EJS` `MySQL`
+- 기존 KCP 결제 앱을 통해서만 결제가 가능(테블릿 결제 시스템)하던 시스템을 오픈 페이지로 구축하여 접근성 강화
+- 업체/관람객 별 결제 시스템 도입
+- 주문 도메인 확장
+- 관리자 CMS 내 결제취소 기능 도입
+- 매출에 따른 일자 통계 구축
+
 ##### 카페24 서버 인프라 AWS 마이그레이션
-- 기존 카페24 데이터베이스 RDS 재구축
-- 기존 카페24 웹호스팅 EC2 재구축
-- 기존 Pure PHP 코드 Node.js RESTful API 서버 화 및 EJS, Vue
-- RESTful API,
+`EC2` `RDS` `CloudFront` `S3` `WAF & Shield` `Lightsail`
+- 기존 카페24 데이터베이스 및 웹호스팅 EC2, RDS를 통해 재구축
+- 기존 관리자용 Pure PHP 코드 Node.js RESTful API 및 EJS로 분기
+- Lightsail 사용하여 전시 별 서브 도메인 분리
+
+##### 라벨 프린터기 출력 페이지 개발
+`PHP` `MySQL` 
+- 기존 관리자 수동 작업 자동화
+- 업체 별 조회 가능 페이지를 구축하여 업체 명찰 라벨 출력
+
+   
