@@ -9,13 +9,13 @@
 
 ## 📟 Tech Stack.
 ### Core
-`Node.js` `TypeScript` `JavaScript` `EJS`
+`Node.js` `TypeScript` `JavaScript` `EJS` `MySQL` `JWT`
 
 ### Also
 `Python Django` `MongoDB` `PHP`
 
 ### Infra
-`AWS EC2` `AWS RDS` `AWS Lambda` `AWS Load Balancer`
+`AWS EC2` `AWS RDS` `AWS Lambda` `AWS Load Balancer` `AWS CloudFront` `AWS Lightsail` `PM2` `Nginx`
 
 ---
 
@@ -30,7 +30,7 @@
   
 #### 결제 청구·정산 자동화
 `node-cron` `Popbill API` `KCP API`
-- 참가업체 인보이스 산정 및 SES 메일 발송
+- 참가업체 인보이스 산정 및 Nodemailer 메일 발송
 - 팝빌 세금계산서 발행·조회·취소 연동
 - 개막 D-1 미납 잔액 배치 갱신 및 CMS 결제취소/수동입금 흐름 정리
   
