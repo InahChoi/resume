@@ -87,13 +87,15 @@
 ---
 
 #### 주식회사 아약 | Backend Developer
+> 2021.08 - 2021.09 
 `TypeScript` `Node.js` `MongoDB` `Mongoose`
-- 사용자의 신체 상태에 맞는 약을 추천해주는 API 작성
-- MongoDB를 사용하여 데이터베이스 구축
+- 사용자 신체·건강 프로필 기반 점수를 매칭하여 상품 추천 REST API 설계·구현
+- 추천 대상·사용자 상태 데이터 MongoDB Document 모델링 및 CRUD API 제공
 
 ---
 
 #### 디뉴로(주) | Backend Developer | 개발팀 인턴
+> 2021.11 - 2023.10
 `Python` `Django` `MySQL`
 - 사용자가 선택한 투자 성향에 따른 추천 포트폴리오 조회 개발
 - 추천 포트폴리오 페이지 내 사용자가 채택한 포트폴리오 저장
