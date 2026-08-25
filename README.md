@@ -6,7 +6,7 @@
 - 안정적인 서버 구조, 유지보수를 위한 함수 컴포넌트화 개발을 지향합니다.
 - 팀원들과 초기 아키텍쳐 및 방향성을 회의하고 함께 개발하는 것에 큰 가치를 둡니다.
 
----
+<br>
 
 ## 📟 Tech Stack.
 ### Core
@@ -18,7 +18,7 @@
 ### Infra
 `AWS EC2` `AWS RDS` `AWS Lambda` `AWS Load Balancer` `AWS CloudFront` `AWS Lightsail` `PM2` `Nginx`
 
----
+<br>
 
 ## 🏙 Experience.
 ### 주식회사 비스컨애드 | Fullstack Developer | 개발팀
@@ -55,4 +55,30 @@
 - Lightsail로 전시별 서브도메인 WordPress 분리 운영
 - 참가신청·사전등록·SMS 인증 공개 REST API 제공 및 WordPress embed 연동
 
+---
    
+### 주식회사 뉴로서킷 | Backend Developer
+> 2021.11 - 2023.09
+- 모바일 앱·관리자 CMS 백엔드 단독/소수 인원 담당. REST API·DB 설계, AWS 운영, Firebase Push, 성능·배포 안정화
+#### 오롯플러스 App · CMS (임산부 건강·위험군 관리)
+`TypeScript` `Node.js` `Sequelize` `MariaDB` `AWS EC2` `AWS RDS` `AWS Lambda` `Firebase`
+- 초기 기획 참여, ERD·REST API 설계 및 관리자 CMS 개발 (Client 4 / Backend 1)
+- Firebase Push·예약 스케줄링 시스템 구축, EC2 기반 서버 운영 환경 구성
+- 복잡 Join 조회에 View Table 적용, 응답 속도 2초 → 0.5초
+- 이미지 업로드 처리를 AWS Lambda로 분리해 Node 서버 CPU 부하 감소
+- Supertest 기반 API 테스트 자동화로 배포 전 오류 검증 체계 구축
+
+  
+#### 바야바즈 App v1/v2 (두피 AI 셀프케어)
+`JavaScript` `Node.js` `Sequelize` `MariaDB` `AWS EC2` `AWS RDS` `Nginx` `EJS` `Firebase`
+- 와이어프레임·기획 참여, ERD·API·챌린지/포인트 시스템 개발 (Backend 2 → 1)
+- AI 분석을 비동기 처리 + 완료 Push 알림으로 전환, 체감 대기 20초 → 1초
+- Controller/Service Layer 분리로 유지보수·기능 확장 구조 정리
+- Firebase Push·Webhook, Winston 로그 정책·PM2 운영 환경 구축
+
+
+#### 카미나비 App · CMS (REVE21 · 일본)
+`JavaScript` `Node.js` `MongoDB` `Mongoose` `JWT` `AWS EC2` `MongoDB Atlas` `Nginx` `EJS`
+- 일본 개인정보 비저장 정책 대응: 디바이스 UUID + JWT 자동 로그인 설계
+- MongoDB Document 구조 설계, 관리자 CMS 개발 및 서버 운영 (Client 3 / Backend 2)
+- PM2·Nginx 기반 EC2 운영 환경 구축
