@@ -1,6 +1,5 @@
 # 최인아 | Backend · Fullstack developer
-> Node.js(Express)·MySQL 기반 API/백오피스와 AWS 인프라를 운영하는 백엔드 개발자입니다. <br>
-> 전시 현장 결제·체크인·청구/정산 등 B2B 운영 도메인을 설계·구현했습니다.
+> Node.js(Express)·MySQL 기반 API/백오피스와 AWS 인프라를 운영하는 백엔드 개발자입니다.
 
 - 서비스 운영 환경에서 발생하는 트러블슈팅 이슈와 사용자 경험 개선을 우선화합니다.
 - 안정적인 서버 구조, 유지보수를 위한 함수 컴포넌트화 개발을 지향합니다.
@@ -57,9 +56,11 @@
 
 ---
    
-### 주식회사 뉴로서킷 | Backend Developer
-> 2021.11 - 2023.09
-- 모바일 앱·관리자 CMS 백엔드 단독/소수 인원 담당. REST API·DB 설계, AWS 운영, Firebase Push, 성능·배포 안정화
+### 주식회사 뉴로서킷 | Backend Developer | 개발 연구팀
+> 2021.11 - 2023.10
+- 모바일 앱·관리자 CMS 백엔드 단독/소수 인원 담당
+- REST API·DB 설계, AWS 운영, Firebase Push, 성능·배포 안정화
+  
 #### 오롯플러스 App · CMS (임산부 건강·위험군 관리)
 `TypeScript` `Node.js` `Sequelize` `MariaDB` `AWS EC2` `AWS RDS` `AWS Lambda` `Firebase`
 - 초기 기획 참여, ERD·REST API 설계 및 관리자 CMS 개발 (Client 4 / Backend 1)
@@ -79,6 +80,22 @@
 
 #### 카미나비 App · CMS (REVE21 · 일본)
 `JavaScript` `Node.js` `MongoDB` `Mongoose` `JWT` `AWS EC2` `MongoDB Atlas` `Nginx` `EJS`
-- 일본 개인정보 비저장 정책 대응: 디바이스 UUID + JWT 자동 로그인 설계
+- 일본 개인정보 비저장 정책 대응 디바이스 UUID + JWT 자동 로그인 설계
 - MongoDB Document 구조 설계, 관리자 CMS 개발 및 서버 운영 (Client 3 / Backend 2)
 - PM2·Nginx 기반 EC2 운영 환경 구축
+
+---
+
+#### 주식회사 아약 | Backend Developer
+`TypeScript` `Node.js` `MongoDB` `Mongoose`
+- 사용자의 신체 상태에 맞는 약을 추천해주는 API 작성
+- MongoDB를 사용하여 데이터베이스 구축
+
+---
+
+#### 디뉴로(주) | Backend Developer | 개발팀 인턴
+`Python` `Django` `MySQL`
+- 사용자가 선택한 투자 성향에 따른 추천 포트폴리오 조회 개발
+- 추천 포트폴리오 페이지 내 사용자가 채택한 포트폴리오 저장
+- 사용자가 선택한 포트폴리오 페이지 개발
+- 증시 오픈 API를 호출하여 DB에 저장하는 스케쥴러 작성
