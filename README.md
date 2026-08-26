@@ -9,13 +9,13 @@
 
 ## 📟 Tech Stack.
 ### Core
-`Node.js` `TypeScript` `JavaScript` `EJS` `MySQL` `JWT`
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=Node.js&logoColor=white"> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=TypeScript&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white"> <img src="https://img.shields.io/badge/EJS-B4CA65?style=flat&logo=ejs&logoColor=white"> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=MySQL&logoColor=white">
 
 ### Also
-`Python Django` `MongoDB` `PHP`
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=Python&logoColor=white"> <img src="https://img.shields.io/badge/django-092E20?style=flat&logo=django&logoColor=white"> <img src="https://img.shields.io/badge/mongoDB-47A248?style=flat&logo=MongoDB&logoColor=white"> <img src="https://img.shields.io/badge/php-777BB4?style=flat&logo=php&logoColor=white"> <img src="https://img.shields.io/badge/html5-E34F26?style=flat&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css-1572B6?style=flat&logo=css&logoColor=white">
 
 ### Infra
-`AWS EC2` `AWS RDS` `AWS Lambda` `AWS Load Balancer` `AWS CloudFront` `AWS Lightsail` `PM2` `Nginx`
+<img src="https://img.shields.io/badge/Amazon%20EC2-242f3e?style=flat&logo=Amazon%20EC2&logoColor=white"> <img src="https://img.shields.io/badge/Amazon%20RDS-3e4a5b?style=flat&logo=Amazon%20EC2&logoColor=white"> <img src="https://img.shields.io/badge/Amazon%20Lambda-5b6675?style=flat&logo=Amazon%20Lambda&logoColor=white"> <img src="https://img.shields.io/badge/Amazon%20S3-89919c?style=flat&logo=Amazon%20S3&logoColor=white"> <img src="https://img.shields.io/badge/Amazon%20CloudFront-a6aeb9?style=flat&logo=Amazon%20CloudFront&logoColor=white"> <img src="https://img.shields.io/badge/Amazon%20Lightsail-d1dbea?style=flat&logo=Amazon%20Lightsail&logoColor=white"> <img src="https://img.shields.io/badge/pm2-2B037A?style=flat&logo=pm2&logoColor=white"> <img src="https://img.shields.io/badge/nginx-%23009639.svg?style=flat&logo=nginx&logoColor=white">
 
 <br>
 
