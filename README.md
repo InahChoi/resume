@@ -120,6 +120,6 @@
 
 ## GitHub Stats.
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=InahChoi&show_icons=true&theme=chartreuse-dark)
+![GitHub Stats](https://github-readme-stats-gules-six-bbjxgsswqc.vercel.app/api?username=InahChoi&show_icons=true&theme=chartreuse-dark)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=InahChoi&layout=compact&theme=chartreuse-dark)
+![Top Languages]([https://github-readme-stats.vercel.app](https://github-readme-stats-gules-six-bbjxgsswqc.vercel.app)/api/top-langs/?username=InahChoi&layout=compact&theme=chartreuse-dark)
