@@ -119,4 +119,7 @@
 <br>
 
 ## GitHub Stats.
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=InahChoi&show_icons=true&theme=②스타일)
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=InahChoi&show_icons=true&theme=chartreuse-dark)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=InahChoi&layout=compact&theme=chartreuse-dark)
