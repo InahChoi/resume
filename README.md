@@ -86,7 +86,7 @@
 
 ---
 
-#### 주식회사 아약 | Backend Developer | 개발팀
+### 주식회사 아약 | Backend Developer | 개발팀
 > 2021.08 – 2021.09
 `TypeScript` `Node.js` `MongoDB` `Mongoose`
 - 회원가입·로그인 및 영양제 상품 카탈로그 REST API 설계·구현
@@ -95,9 +95,28 @@
 
 ---
 
-#### 디뉴로(주) | Backend Developer | 개발팀 인턴
+### 디뉴로(주) | Backend Developer | 개발팀 인턴
 > 2021.04 - 2021.05
 `Python` `Django` `MySQL`
 - 사용자 투자 성향 저장 및 성향 기반 추천 포트폴리오 조회 API 개발
 - 사용자가 채택한 포트폴리오 저장 API 구현
 - 백엔드 2인 협업으로 API 스펙 정의 및 Django 기반 데이터 연동
+
+<br>
+
+
+## 🏢 Education.
+서울디지털대학교 | 소프트웨어학과 전공 | 2021 - 2025 졸업
+
+<br>
+
+## 📇 Contact. 
+|  |  |
+| --- | --- |
+| **GitHub** | https://github.com/InahChoi |
+| **Email** | choiinah@kakao.com |
+
+<br>
+
+## GitHub Stats.
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=InahChoi&show_icons=true&theme=②스타일)
