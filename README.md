@@ -78,7 +78,7 @@
 - Firebase Push·Webhook, Winston 로그 정책·PM2 운영 환경 구축
 
 
-#### 카미나비 App · CMS (REVE21 · 일본)
+#### 카미나비 라이트 App · CMS (REVE21 · 일본)
 `JavaScript` `Node.js` `MongoDB` `Mongoose` `JWT` `AWS EC2` `MongoDB Atlas` `Nginx` `EJS`
 - 일본 개인정보 비저장 정책 대응 디바이스 UUID + JWT 자동 로그인 설계
 - MongoDB Document 구조 설계, 관리자 CMS 개발 및 서버 운영 (Client 3 / Backend 2)
@@ -86,18 +86,18 @@
 
 ---
 
-#### 주식회사 아약 | Backend Developer
-> 2021.08 - 2021.09 
+#### 주식회사 아약 | Backend Developer | 개발팀
+> 2021.08 – 2021.09
 `TypeScript` `Node.js` `MongoDB` `Mongoose`
-- 사용자 신체·건강 프로필 기반 점수를 매칭하여 상품 추천 REST API 설계·구현
-- 추천 대상·사용자 상태 데이터 MongoDB Document 모델링 및 CRUD API 제공
+- 회원가입·로그인 및 영양제 상품 카탈로그 REST API 설계·구현
+- 문항별 선택 점수 합산 로직으로 프로필 점수에 맞는 영양제 추천 API 구현
+- 프론트와 기획·스펙 협의, apidocs 문서화 및 Postman으로 API 연동 협업
 
 ---
 
 #### 디뉴로(주) | Backend Developer | 개발팀 인턴
 > 2021.04 - 2021.05
 `Python` `Django` `MySQL`
-- 사용자가 선택한 투자 성향에 따른 추천 포트폴리오 조회 개발
-- 추천 포트폴리오 페이지 내 사용자가 채택한 포트폴리오 저장
-- 사용자가 선택한 포트폴리오 페이지 개발
-- 증시 오픈 API를 호출하여 DB에 저장하는 스케쥴러 작성
+- 사용자 투자 성향 저장 및 성향 기반 추천 포트폴리오 조회 API 개발
+- 사용자가 채택한 포트폴리오 저장 API 구현
+- 백엔드 2인 협업으로 API 스펙 정의 및 Django 기반 데이터 연동
