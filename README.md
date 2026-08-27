@@ -117,7 +117,3 @@
 | **Email** | choiinah@kakao.com |
 
 <br>
-
-![GitHub Stats](https://github-readme-stats-gules-six-bbjxgsswqc.vercel.app/api?username=InahChoi&show_icons=true&theme=chartreuse-dark)
-
-![Top Languages](https://github-readme-stats-gules-six-bbjxgsswqc.vercel.app/api/top-langs/?username=InahChoi&layout=compact&theme=chartreuse-dark)
