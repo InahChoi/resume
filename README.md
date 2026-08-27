@@ -80,7 +80,7 @@
 
 #### 카미나비 라이트 App · CMS (REVE21 · 일본)
 `JavaScript` `Node.js` `MongoDB` `Mongoose` `JWT` `AWS EC2` `MongoDB Atlas` `Nginx` `EJS`
-- 일본 개인정보 비저장 정책 대응 디바이스 UUID + JWT 자동 로그인 설계
+- 일본 국외 개인정보 비저장 정책 대응 디바이스 UUID + JWT 자동 로그인 설계
 - MongoDB Document 구조 설계, 관리자 CMS 개발 및 서버 운영 (Client 3 / Backend 2)
 - PM2·Nginx 기반 EC2 운영 환경 구축
 
@@ -118,8 +118,6 @@
 
 <br>
 
-## GitHub Stats.
-
 ![GitHub Stats](https://github-readme-stats-gules-six-bbjxgsswqc.vercel.app/api?username=InahChoi&show_icons=true&theme=chartreuse-dark)
 
-![Top Languages]([https://github-readme-stats.vercel.app](https://github-readme-stats-gules-six-bbjxgsswqc.vercel.app)/api/top-langs/?username=InahChoi&layout=compact&theme=chartreuse-dark)
+![Top Languages](https://github-readme-stats-gules-six-bbjxgsswqc.vercel.app/api/top-langs/?username=InahChoi&layout=compact&theme=chartreuse-dark)
