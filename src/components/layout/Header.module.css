@@ -1,0 +1,28 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  height: var(--header-height);
+  padding: 0 clamp(24px, 5vw, 80px);
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+}
+
+.logo:hover {
+  color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 24px;
+  }
+}

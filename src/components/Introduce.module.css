@@ -1,0 +1,64 @@
+.introduce {
+  display: grid;
+  grid-template-columns: minmax(200px, 280px) 1fr;
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.imagePlaceholder {
+  aspect-ratio: 1;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+}
+
+.name {
+  font-size: 1.5rem;
+}
+
+.role {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.links a {
+  font-size: 0.875rem;
+  color: var(--color-accent);
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.title {
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  letter-spacing: 0.08em;
+}
+
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .introduce {
+    grid-template-columns: 1fr;
+  }
+}
