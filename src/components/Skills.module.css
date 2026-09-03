@@ -19,7 +19,7 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 25px;
-  color: #fff;
+  color: var(--color-text);
 }
 
 .tags {
@@ -41,14 +41,33 @@
   font-size: 13px;
   font-weight: 400;
   line-height: 1;
-  color: #00ceff;
-  border: 1px solid #00ceff;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
   border-radius: 999px;
 }
 
 @media (max-width: 768px) {
+  .list {
+    gap: 32px;
+  }
+
   .row {
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 8px;
+  }
+
+  .category {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .tags {
+    gap: 8px;
+  }
+
+  .tag {
+    height: 22px;
+    padding: 0 8px;
+    font-size: 12px;
   }
 }

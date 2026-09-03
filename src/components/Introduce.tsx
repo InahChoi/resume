@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { SectionBlock } from './layout/SectionBlock'
 import { resume } from '../data/resume'
 import styles from './Introduce.module.css'
@@ -22,16 +23,44 @@ function GitHubIcon() {
   )
 }
 
+async function copyText(value: string) {
+  if (navigator.clipboard?.writeText) {
+    await navigator.clipboard.writeText(value)
+    return
+  }
+
+  const input = document.createElement('textarea')
+  input.value = value
+  input.setAttribute('readonly', '')
+  input.style.position = 'fixed'
+  input.style.opacity = '0'
+  document.body.appendChild(input)
+  input.select()
+  document.execCommand('copy')
+  document.body.removeChild(input)
+}
+
 export function Introduce() {
   const { name, role, email, githubHandle, githubUrl, imageUrl, paragraphs } =
     resume.introduce
+  const [copied, setCopied] = useState(false)
+
+  const handleCopyEmail = async () => {
+    try {
+      await copyText(email)
+      setCopied(true)
+      window.setTimeout(() => setCopied(false), 1600)
+    } catch {
+      setCopied(false)
+    }
+  }
 
   return (
     <div className={styles.introduce}>
       <div className={styles.profileRow}>
         <div className={styles.imageWrap}>
           {imageUrl ? (
-            <img src={imageUrl} alt="" className={styles.image} />
+            <img src={imageUrl} alt={`${name} 프로필`} className={styles.image} />
           ) : (
             <div className={styles.imagePlaceholder} aria-hidden="true" />
           )}
@@ -43,7 +72,19 @@ export function Introduce() {
           <ul className={styles.contacts}>
             <li>
               <EmailIcon />
-              <a href={`mailto:${email}`}>{email}</a>
+              <button
+                type="button"
+                className={styles.emailButton}
+                onClick={handleCopyEmail}
+                aria-label={`${email} 복사하기`}
+              >
+                <span>{email}</span>
+                {copied ? (
+                  <span className={styles.copiedLabel} aria-live="polite">
+                    복사됨
+                  </span>
+                ) : null}
+              </button>
             </li>
             <li>
               <GitHubIcon />

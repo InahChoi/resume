@@ -9,7 +9,7 @@ export const SECTIONS: SectionItem[] = [
   { id: 'skills', label: 'SKILL' },
   { id: 'experience', label: 'EXPERIENCE' },
   { id: 'projects', label: 'PROJECT' },
-  { id: 'education', label: 'EDUCATION' },
+  { id: 'education', label: 'EDUCATION & ETC' },
 ]
 
 export const NAV_SECTIONS = SECTIONS.filter((section) => section.id !== 'hero')

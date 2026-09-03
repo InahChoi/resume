@@ -41,7 +41,7 @@
 
 @media (max-width: 768px) {
   .section {
-    padding-bottom: 88px;
+    padding-bottom: 16px;
   }
 
   .inner {
@@ -49,10 +49,10 @@
   }
 
   .start {
-    padding-top: 72px;
+    padding-top: calc(var(--header-height) + 16px);
   }
 
   .introduceOffset {
-    padding-top: 96px;
+    padding-top: calc(var(--header-height) + 24px);
   }
 }

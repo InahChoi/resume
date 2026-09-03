@@ -10,7 +10,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
 }
 
 .headingWithMeta {
@@ -44,7 +43,7 @@
   max-width: var(--section-title-line-width);
   height: 1px;
   flex-shrink: 0;
-  background: rgba(255, 255, 255, 0.7);
+  background: var(--color-title-line);
 }
 
 .body {
@@ -75,10 +74,16 @@
 @media (max-width: 768px) {
   .block {
     grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .title {
+    font-size: 0.9375rem;
+    letter-spacing: 0.1em;
   }
 
   .titleLine {
-    width: 180px;
+    width: 140px;
     max-width: 100%;
   }
 
@@ -92,11 +97,13 @@
 
   .body {
     max-width: 100%;
-    padding-top: 8px;
+    padding-top: 4px;
+    font-size: 0.9375rem;
+    line-height: 1.7;
   }
 
   .stack {
-    gap: 24px;
+    gap: 18px;
   }
 
   .stack .body {

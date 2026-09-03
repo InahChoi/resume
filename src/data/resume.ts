@@ -1,4 +1,6 @@
-import type { Resume } from './resume.types';
+import type { Resume } from './resume.types'
+import projectThumb from '../assets/hero.png'
+import profileImage from '../assets/profile.png'
 
 export const resume: Resume = {
   hero: {
@@ -13,6 +15,7 @@ export const resume: Resume = {
     email: 'choiinah@kakao.com',
     githubHandle: '@InahChoi',
     githubUrl: 'https://github.com/InahChoi',
+    imageUrl: profileImage,
     paragraphs: [
       'Node.js 기반 API 서버 개발 및 AWS 인프라 운영 경험을 가진 백엔드 개발자입니다. 서비스 초기 기획부터 API 설계, Database 모델링, 운영 및 성능 개선까지 전반적인 백엔드 개발 업무를 수행해왔습니다.',
       '특히 실제 서비스 운영 환경에서 발생하는 성능 이슈와 사용자 경험 개선에 관심이 많으며, 안정적인 서버 구조와 유지보수성을 고려한 개발을 지향합니다.',
@@ -206,17 +209,125 @@ export const resume: Resume = {
   ],
   projects: [
     {
-      id: 'proj-1',
+      id: 'url-shot',
+      title: 'URL Shot',
+      summary:
+        '긴 URL을 짧게 줄이고, 클릭·미리보기 메타데이터를 수집하는 Full-Stack URL 단축 서비스',
+      imageUrl: projectThumb,
+      techStack: ['Nest.js', 'TypeScript', 'React', 'PostgreSQL'],
+      detail: {
+        namespace: 'InahChoi/',
+        slug: 'url-shot',
+        displayName: 'URL Shot',
+        techLabel: 'NEST.JS · TYPESCRIPT · REACT · POSTGRESQL',
+        githubUrl: 'https://github.com/InahChoi',
+        links: [
+          {
+            kind: 'npm',
+            label: 'npm',
+            href: 'https://www.npmjs.com/',
+          },
+          {
+            kind: 'docs',
+            label: '문서',
+            href: 'https://github.com/InahChoi',
+          },
+          {
+            kind: 'github',
+            label: 'GitHub',
+            href: 'https://github.com/InahChoi',
+          },
+        ],
+        body: [
+          {
+            type: 'paragraph',
+            text: 'URL Shot은 단축 링크 생성부터 Open Graph 미리보기, 클릭 로그 집계까지를 한 API로 제공하는 사이드 프로젝트입니다. Nest.js와 PostgreSQL로 도메인을 모델링하고, React 대시보드에서 실시간 통계를 확인합니다.',
+          },
+          {
+            type: 'heading',
+            text: '단축 링크 발급',
+          },
+          {
+            type: 'paragraph',
+            text: '원본 URL을 검증한 뒤 Base62 슬러그를 발급합니다. 충돌 시 재시도하며, 만료일·비밀번호·커스텀 슬러그를 옵션으로 받을 수 있습니다.',
+          },
+          {
+            type: 'heading',
+            text: '타입 안전한 Redirect API',
+          },
+          {
+            type: 'paragraph',
+            text: '리다이렉트 핸들러는 DTO와 Zod 스키마로 입력값을 검증합니다. IDE 자동완성을 유지하면서 런타임 오류를 줄이는 구조를 목표로 했습니다.',
+          },
+          {
+            type: 'code',
+            language: 'typescript',
+            code: `const link = await links
+  .create({
+    url: 'https://example.com/very/long/path',
+    expiresAt: '2026-12-31',
+  })
+  .select(['slug', 'shortUrl'])
+  .execute()
+
+// GET /r/:slug → 302 Location: original url`,
+            note: '슬러그 발급과 리다이렉트 응답을 한 흐름으로 처리합니다.',
+          },
+          {
+            type: 'heading',
+            text: '그 외 갖춘 것들',
+          },
+          {
+            type: 'list',
+            items: [
+              {
+                title: 'Click Analytics',
+                description:
+                  'Referer·UA·국가 코드를 비동기로 적재하고 일별 집계 뷰로 조회합니다.',
+              },
+              {
+                title: 'OG Preview',
+                description:
+                  '`fetchMeta()`로 타이틀·이미지를 캐시해 대시보드 카드에 바로 표시합니다.',
+              },
+              {
+                title: 'Rate Limit',
+                description:
+                  'IP 기준 `safe` 모드와 `dry-run` 모드를 분리해 남용을 차단합니다.',
+              },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      id: 'data-insite',
+      title: 'Data Insite',
+      techStack: ['Nest.js', 'TypeScript', 'React', 'PostgreSQL'],
+    },
+    {
+      id: 'proj-3',
       title: 'Project Title',
-      period: '2024.01 – 2024.06',
-      techStack: ['React', 'TypeScript'],
+      techStack: ['Nest.js', 'TypeScript', 'React', 'PostgreSQL'],
     },
   ],
   education: [
     {
-      school: '서울디지털대학교',
-      major: '소프트웨어학과',
-      period: '2021 – 2025',
+      period: '2021 ~ 2025',
+      title: '서울디지털대학교',
+      description: 'AI 소프트웨어공학 전공 학사 졸업',
+    },
+  ],
+  etc: [
+    {
+      period: '2021',
+      title: '위코드 부트캠프 수료',
+      description: '백엔드 API 작성 및 데이터베이스 구성 경험',
+    },
+    {
+      period: '2018-11 ~ 2021-01',
+      title: '구인터내셔널유한책임회사',
+      description: '웹퍼블리싱 및 기획, 디자인 경험',
     },
   ],
   contact: {

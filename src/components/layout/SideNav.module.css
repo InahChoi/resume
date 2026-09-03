@@ -1,4 +1,4 @@
-.nav {
+.desktopNav {
   position: fixed;
   top: var(--nav-top);
   left: 0;
@@ -14,6 +14,14 @@
   max-width: var(--shell-max-width);
   margin: 0 auto;
   padding: 0 var(--shell-padding);
+  pointer-events: none;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 28px;
   pointer-events: auto;
 }
 
@@ -32,48 +40,185 @@
   font-size: 15px;
   font-weight: 300;
   letter-spacing: 0;
-  color: #fff;
+  color: var(--color-text);
   padding-bottom: 6px;
   border-bottom: 1px solid transparent;
   transition:
-    color 0.2s ease,
-    border-color 0.2s ease,
-    font-weight 0.2s ease;
+    color 220ms ease,
+    border-color 220ms ease,
+    font-weight 220ms ease;
   text-align: right;
   white-space: nowrap;
 }
 
 .list button:hover {
-  color: #fff;
+  color: var(--color-text);
 }
 
 .list button.active {
   font-weight: 800;
-  color: #fff;
-  border-bottom-color: #fff;
+  color: var(--color-text);
+  border-bottom-color: var(--color-text);
+}
+
+.themeButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  line-height: 1;
+  border: 1px solid rgb(123 123 123 / 70%);
+  border-radius: 8px;
+  opacity: 0.9;
+  transition:
+    opacity 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.themeButton:hover {
+  opacity: 1;
+  border-color: rgb(123 123 123 / 70%);
+}
+
+.mobileHeader,
+.mobileMenu {
+  display: none;
 }
 
 @media (max-width: 768px) {
-  .nav {
-    top: auto;
-    bottom: 0;
+  .desktopNav {
+    display: none;
   }
 
-  .shell {
+  .mobileHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--header-height);
+    padding: 0 var(--shell-padding);
+    background: color-mix(in srgb, var(--color-bg) 92%, transparent);
+    border-bottom: 1px solid var(--color-title-line);
+    backdrop-filter: blur(10px);
+  }
+
+  .logo {
+    font-family: var(--font-display);
+    font-size: 1.0625rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--color-text);
+  }
+
+  .hamburger {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
-    padding: 12px var(--shell-padding);
-    background: linear-gradient(to top, var(--color-bg) 70%, transparent);
   }
 
-  .list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px 14px;
+  .hamburger span {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    height: 1.5px;
+    background: var(--color-text);
+    border-radius: 999px;
+    transition:
+      transform 200ms ease,
+      opacity 200ms ease,
+      top 200ms ease;
   }
 
-  .list button {
-    text-align: center;
-    padding-bottom: 4px;
+  .hamburger span:nth-child(1) {
+    top: 14px;
+  }
+
+  .hamburger span:nth-child(2) {
+    top: 19px;
+  }
+
+  .hamburger span:nth-child(3) {
+    top: 24px;
+  }
+
+  .hamburgerOpen span:nth-child(1) {
+    top: 19px;
+    transform: rotate(45deg);
+  }
+
+  .hamburgerOpen span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburgerOpen span:nth-child(3) {
+    top: 19px;
+    transform: rotate(-45deg);
+  }
+
+  .mobileMenu {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 190;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .mobileMenuOpen {
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .mobileBackdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    opacity: 0;
+    transition: opacity 200ms ease;
+  }
+
+  .mobileMenuOpen .mobileBackdrop {
+    opacity: 1;
+  }
+
+  .mobilePanel {
+    position: absolute;
+    top: var(--header-height);
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 28px var(--shell-padding) 32px;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-title-line);
+    transform: translateY(-8px);
+    opacity: 0;
+    transition:
+      transform 200ms ease,
+      opacity 200ms ease;
+  }
+
+  .mobileMenuOpen .mobilePanel {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .mobileList {
+    gap: 18px;
+  }
+
+  .mobileList button {
+    text-align: left;
+    font-size: 16px;
   }
 }

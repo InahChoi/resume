@@ -100,7 +100,7 @@
   letter-spacing: 0.28em;
   color: var(--color-text-muted);
   transform: translateX(-50%);
-  transition: color 0.2s ease;
+  transition: color 220ms ease;
 }
 
 .scrollHint:hover {
@@ -124,10 +124,26 @@
 @media (max-width: 768px) {
   .welcome {
     margin-bottom: 6px;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+  }
+
+  .name {
+    font-size: 42px;
   }
 
   .tagline {
-    margin-top: 10px;
+    margin-top: 8px;
+  }
+
+  .taglineLine {
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  .scrollHint {
+    bottom: 8px;
+    font-size: 0.5625rem;
   }
 }
 

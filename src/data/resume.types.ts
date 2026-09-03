@@ -34,19 +34,46 @@ export interface Experience {
   projects: ExperienceProject[]
 }
 
+export type ProjectBodyBlock =
+  | { type: 'paragraph'; text: string }
+  | { type: 'heading'; text: string }
+  | { type: 'code'; code: string; language?: string; note?: string }
+  | {
+      type: 'list'
+      items: Array<{ title: string; description: string }>
+    }
+
+export interface ProjectLink {
+  kind: 'npm' | 'docs' | 'github' | 'link'
+  label: string
+  href: string
+}
+
+export interface ProjectDetail {
+  namespace: string
+  slug: string
+  summary?: string
+  displayName: string
+  techLabel: string
+  githubUrl?: string
+  links?: ProjectLink[]
+  body: ProjectBodyBlock[]
+}
+
 export interface Project {
   id: string
   title: string
-  period: string
+  summary?: string
+  period?: string
   techStack: string[]
   imageUrl?: string
+  detail?: ProjectDetail
 }
 
-export interface Education {
-  school: string
-  major: string
+export interface EducationEntry {
   period: string
-  note?: string
+  title: string
+  description: string
 }
 
 export interface Resume {
@@ -55,7 +82,8 @@ export interface Resume {
   skills: SkillCategory[]
   experiences: Experience[]
   projects: Project[]
-  education: Education[]
+  education: EducationEntry[]
+  etc: EducationEntry[]
   contact: {
     email: string
     github: string

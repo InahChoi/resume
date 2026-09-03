@@ -9,7 +9,7 @@
   font-size: 13px;
   font-weight: 400;
   line-height: 1.125rem;
-  color: #00ceff;
+  color: var(--color-accent);
   white-space: nowrap;
 }
 
@@ -41,7 +41,7 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 1.4;
-  color: #fff;
+  color: var(--color-text);
   white-space: nowrap;
 }
 
@@ -50,7 +50,7 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 1.4;
-  color: #9b9b9b;
+  color: var(--color-period-ended);
   white-space: nowrap;
 }
 
@@ -66,11 +66,11 @@
   height: 8px;
   flex-shrink: 0;
   border-radius: 50%;
-  background: #00ceff;
+  background: var(--color-accent);
 }
 
 .dotEnded {
-  background: #aaaaaa;
+  background: var(--color-dot-ended);
 }
 
 .company {
@@ -78,6 +78,7 @@
   font-size: 20px;
   font-weight: 700;
   line-height: 1.4;
+  color: var(--color-text);
 }
 
 .scopes {
@@ -86,7 +87,7 @@
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: var(--color-text);
 }
 
 .projects {
@@ -124,9 +125,9 @@
   font-size: 13px;
   font-weight: 400;
   line-height: 1;
-  color: #fff;
-  background-color: #4b4b4b;
-  border: 1px solid #747474;
+  color: var(--color-text);
+  background-color: var(--color-tag-bg);
+  border: 1px solid var(--color-tag-border);
   border-radius: 13px;
 }
 
@@ -138,7 +139,7 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 1.7;
-  color: #fff;
+  color: var(--color-text);
   word-break: keep-all;
 }
 
@@ -154,7 +155,7 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fff;
+  background: var(--color-text);
 }
 
 .highlights li + li {
@@ -166,20 +167,73 @@
     --section-heading-meta-width: 100%;
   }
 
+  .total {
+    font-size: 12px;
+  }
+
+  .list {
+    gap: 36px;
+  }
+
   .itemHead {
     grid-template-columns: 1fr;
-    gap: 8px;
+    gap: 6px;
   }
 
   .periodRow {
     justify-content: flex-start;
+    min-height: auto;
+  }
+
+  .period {
+    font-size: 13px;
+  }
+
+  .periodEnded {
+    font-size: 12px;
+  }
+
+  .companyRow {
+    min-height: auto;
+    gap: 8px;
+  }
+
+  .company {
+    font-size: 17px;
+  }
+
+  .scopes {
+    font-size: 12px;
   }
 
   .projects {
+    gap: 24px;
+    margin-top: 8px;
     padding-left: 0;
   }
 
-  .list {
-    gap: 48px;
+  .projectTitle {
+    font-size: 14px;
+  }
+
+  .tags {
+    gap: 3px;
+    margin-top: 8px;
+  }
+
+  .tag {
+    height: 18px;
+    padding: 0 8px;
+    font-size: 11px;
+  }
+
+  .highlights {
+    margin-top: 8px;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .highlights li + li {
+    margin-top: 4px;
   }
 }

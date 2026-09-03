@@ -1,43 +1,48 @@
 import { SectionBlock } from './layout/SectionBlock'
 import { resume } from '../data/resume'
+import type { EducationEntry } from '../data/resume.types'
 import styles from './EducationEtc.module.css'
 
+function EntryList({ items }: { items: EducationEntry[] }) {
+  return (
+    <ul className={styles.list}>
+      {items.map((item) => (
+        <li key={`${item.period}-${item.title}`} className={styles.row}>
+          <div className={styles.periodCell}>
+            <span className={styles.period}>{item.period}</span>
+          </div>
+          <div className={styles.content}>
+            <h3 className={styles.itemTitle}>{item.title}</h3>
+            <p className={styles.description}>{item.description}</p>
+          </div>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+function RailMeta() {
+  return <span className={styles.railMeta} aria-hidden="true" />
+}
+
 export function EducationEtc() {
-  const { education, contact } = resume
+  const { introduce } = resume
 
   return (
-    <SectionBlock title="EDUCATION">
-      <ul className={styles.list}>
-        {education.map(({ school, major, period, note }) => (
-          <li key={school} className={styles.item}>
-            <div className={styles.header}>
-              <h3 className={styles.school}>{school}</h3>
-              <span className={styles.period}>{period}</span>
-            </div>
-            <p className={styles.major}>{major}</p>
-            {note && <p className={styles.note}>{note}</p>}
-          </li>
-        ))}
-      </ul>
+    <div className={styles.page}>
+      <div className={styles.sections}>
+        <SectionBlock title="EDUCATION" layout="stack" meta={<RailMeta />}>
+          <EntryList items={resume.education} />
+        </SectionBlock>
 
-      <div className={styles.contact}>
-        <h3 className={styles.contactTitle}>CONTACT</h3>
-        <p>
-          <a href={`mailto:${contact.email}`}>{contact.email}</a>
-        </p>
-        <p>
-          <a href={contact.github} target="_blank" rel="noreferrer">
-            GitHub
-          </a>
-        </p>
-        {contact.blog && (
-          <p>
-            <a href={contact.blog} target="_blank" rel="noreferrer">
-              Blog
-            </a>
-          </p>
-        )}
+        <SectionBlock title="ETC" layout="stack" meta={<RailMeta />}>
+          <EntryList items={resume.etc} />
+        </SectionBlock>
       </div>
-    </SectionBlock>
+
+      <footer className={styles.footer}>
+        <p className={styles.copyright}>© 2026 {introduce.name}</p>
+      </footer>
+    </div>
   )
 }

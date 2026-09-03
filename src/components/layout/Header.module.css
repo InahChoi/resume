@@ -25,8 +25,15 @@
   letter-spacing: 0.02em;
   color: var(--color-text);
   white-space: nowrap;
+  transition: color 220ms ease;
 }
 
 .logo:hover {
   color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: none;
+  }
 }
