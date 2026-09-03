@@ -16,6 +16,12 @@
   --nav-top: 160px;
   --section-start-offset: 100px;
   --introduce-start-offset: 160px;
+  --section-title-col: 200px;
+  --section-col-gap: 32px;
+  --section-title-line-width: calc(var(--section-title-col) + var(--section-col-gap) - 8px);
+  --section-body-max-width: 750px;
+  --section-body-offset: 80px;
+  --experience-rail-width: 236px;
 }
 
 *,

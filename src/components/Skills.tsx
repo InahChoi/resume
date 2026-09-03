@@ -1,10 +1,10 @@
+import { SectionBlock } from './layout/SectionBlock'
 import { resume } from '../data/resume'
 import styles from './Skills.module.css'
 
 export function Skills() {
   return (
-    <div className={styles.skills}>
-      <h2 className={styles.title}>SKILL</h2>
+    <SectionBlock title="SKILL" layout="stack">
       <ul className={styles.list}>
         {resume.skills.map(({ title, items }) => (
           <li key={title} className={styles.row}>
@@ -19,6 +19,6 @@ export function Skills() {
           </li>
         ))}
       </ul>
-    </div>
+    </SectionBlock>
   )
 }

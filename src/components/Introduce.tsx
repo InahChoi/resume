@@ -1,3 +1,4 @@
+import { SectionBlock } from './layout/SectionBlock'
 import { resume } from '../data/resume'
 import styles from './Introduce.module.css'
 
@@ -54,18 +55,15 @@ export function Introduce() {
         </div>
       </div>
 
-      <div className={styles.contentRow}>
-        <div className={styles.heading}>
-          <h3 className={styles.title}>INTRODUCE</h3>
-          <span className={styles.titleLine} aria-hidden="true" />
-        </div>
-
-        <div className={styles.paragraphs}>
-          {paragraphs.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
-          ))}
-        </div>
-      </div>
+      <SectionBlock
+        title="INTRODUCE"
+        className={styles.contentRow}
+        bodyClassName={styles.paragraphs}
+      >
+        {paragraphs.map((paragraph) => (
+          <p key={paragraph}>{paragraph}</p>
+        ))}
+      </SectionBlock>
     </div>
   )
 }

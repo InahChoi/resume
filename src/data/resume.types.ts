@@ -19,12 +19,19 @@ export interface SkillCategory {
   items: string[]
 }
 
+export interface ExperienceProject {
+  title: string
+  techStack: string[]
+  highlights: string[]
+}
+
 export interface Experience {
   id: string
   company: string
-  role: string
-  period: string
-  highlights: string[]
+  scopes: string[]
+  start: string
+  end: string | null
+  projects: ExperienceProject[]
 }
 
 export interface Project {

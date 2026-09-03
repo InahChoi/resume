@@ -1,10 +1,10 @@
+import { SectionBlock } from './layout/SectionBlock'
 import { resume } from '../data/resume'
 import styles from './ProjectGrid.module.css'
 
 export function ProjectGrid() {
   return (
-    <div className={styles.projects}>
-      <h2 className={styles.title}>PROJECT</h2>
+    <SectionBlock title="PROJECT">
       <ul className={styles.grid}>
         {resume.projects.map(({ id, title, period, techStack }) => (
           <li key={id} className={styles.card}>
@@ -19,6 +19,6 @@ export function ProjectGrid() {
           </li>
         ))}
       </ul>
-    </div>
+    </SectionBlock>
   )
 }

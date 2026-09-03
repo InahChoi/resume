@@ -1,3 +1,4 @@
+import { SectionBlock } from './layout/SectionBlock'
 import { resume } from '../data/resume'
 import styles from './EducationEtc.module.css'
 
@@ -5,9 +6,7 @@ export function EducationEtc() {
   const { education, contact } = resume
 
   return (
-    <div className={styles.education}>
-      <h2 className={styles.title}>EDUCATION &amp; ETC</h2>
-
+    <SectionBlock title="EDUCATION">
       <ul className={styles.list}>
         {education.map(({ school, major, period, note }) => (
           <li key={school} className={styles.item}>
@@ -39,6 +38,6 @@ export function EducationEtc() {
           </p>
         )}
       </div>
-    </div>
+    </SectionBlock>
   )
 }
