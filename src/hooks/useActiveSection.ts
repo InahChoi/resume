@@ -23,8 +23,8 @@ export function useActiveSection() {
       },
       {
         root: null,
-        rootMargin: '-40% 0px -40% 0px',
-        threshold: [0, 0.25, 0.5, 0.75, 1],
+        rootMargin: '-35% 0px -35% 0px',
+        threshold: 0,
       },
     )
 

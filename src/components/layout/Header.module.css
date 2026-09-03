@@ -1,12 +1,21 @@
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  z-index: 100;
+  right: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.shell {
   display: flex;
   align-items: center;
+  width: 100%;
+  max-width: var(--shell-max-width);
   height: var(--header-height);
-  padding: 0 clamp(24px, 5vw, 80px);
+  margin: 0 auto;
+  padding: 0 var(--shell-padding);
+  pointer-events: auto;
 }
 
 .logo {
@@ -15,14 +24,9 @@
   font-weight: 600;
   letter-spacing: 0.02em;
   color: var(--color-text);
+  white-space: nowrap;
 }
 
 .logo:hover {
   color: var(--color-accent);
-}
-
-@media (max-width: 768px) {
-  .header {
-    padding: 0 24px;
-  }
 }

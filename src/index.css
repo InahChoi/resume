@@ -2,14 +2,20 @@
   --color-bg: #15181d;
   --color-text: #ffffff;
   --color-text-muted: #8b929a;
-  --color-accent: #5b9cf6;
+  --color-accent: #00ceff;
 
   --font-body: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   --font-display: 'Montserrat', var(--font-body);
 
-  --layout-max-width: 1200px;
-  --header-height: 80px;
-  --nav-width: 160px;
+  --shell-max-width: 1300px;
+  --content-max-width: 1080px;
+  --nav-width: calc(var(--shell-max-width) - var(--content-max-width));
+  --shell-padding: 24px;
+  --shell-offset: max(var(--shell-padding), calc((100vw - var(--shell-max-width)) / 2));
+  --header-height: 64px;
+  --nav-top: 160px;
+  --section-start-offset: 100px;
+  --introduce-start-offset: 160px;
 }
 
 *,
@@ -20,7 +26,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
 }
 
 body {

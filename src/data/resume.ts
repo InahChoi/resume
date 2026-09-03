@@ -5,16 +5,19 @@ export const resume: Resume = {
     welcome: 'WELCOME TO MY PORTFOLIO',
     name: 'Choi InAh',
     tagline:
-      'Building reliable servers to seamless user experiences,\nexpanding horizons into Full-Stack engineering.',
+      'Building reliable servers to seamless user experiences.\nexpanding horizons into Full-Stack engineering.',
   },
   introduce: {
     name: '최인아',
-    role: 'Backend Developer / Web Developer',
-    links: [
-      { label: 'GitHub', url: 'https://github.com/InahChoi' },
-      { label: 'Velog', url: 'https://velog.io/@inah-_-' },
+    role: 'Backend Developer | Web Developer',
+    email: 'choiinah@kakao.com',
+    githubHandle: '@InahChoi',
+    githubUrl: 'https://github.com/InahChoi',
+    paragraphs: [
+      'Node.js 기반 API 서버 개발 및 AWS 인프라 운영 경험을 가진 백엔드 개발자입니다. 서비스 초기 기획부터 API 설계, Database 모델링, 운영 및 성능 개선까지 전반적인 백엔드 개발 업무를 수행해왔습니다.',
+      '특히 실제 서비스 운영 환경에서 발생하는 성능 이슈와 사용자 경험 개선에 관심이 많으며, 안정적인 서버 구조와 유지보수성을 고려한 개발을 지향합니다.',
+      '현재에는',
     ],
-    paragraphs: [''],
   },
   skills: [
     { title: 'LANGUAGES', items: ['JavaScript', 'TypeScript', 'Python'] },

@@ -7,8 +7,10 @@ export interface Hero {
 export interface Introduce {
   name: string
   role: string
+  email: string
+  githubHandle: string
+  githubUrl: string
   imageUrl?: string
-  links: { label: string; url: string }[]
   paragraphs: string[]
 }
 

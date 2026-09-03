@@ -9,20 +9,22 @@ interface SideNavProps {
 export function SideNav({ activeId, onNavigate }: SideNavProps) {
   return (
     <nav className={styles.nav} aria-label="Section navigation">
-      <ul className={styles.list}>
-        {NAV_SECTIONS.map(({ id, label }) => (
-          <li key={id}>
-            <button
-              type="button"
-              className={activeId === id ? styles.active : undefined}
-              onClick={() => onNavigate(id)}
-              aria-current={activeId === id ? 'true' : undefined}
-            >
-              {label}
-            </button>
-          </li>
-        ))}
-      </ul>
+      <div className={styles.shell}>
+        <ul className={styles.list}>
+          {NAV_SECTIONS.map(({ id, label }) => (
+            <li key={id}>
+              <button
+                type="button"
+                className={activeId === id ? styles.active : undefined}
+                onClick={() => onNavigate(id)}
+                aria-current={activeId === id ? 'true' : undefined}
+              >
+                {label}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
     </nav>
   )
 }

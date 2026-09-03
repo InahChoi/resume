@@ -1,6 +1,6 @@
-import { Header } from './components/layout/Header'
 import { SideNav } from './components/layout/SideNav'
 import { SnapSection } from './components/layout/SnapSection'
+import sectionStyles from './components/layout/SnapSection.module.css'
 import { Hero } from './components/Hero'
 import { Introduce } from './components/Introduce'
 import { Skills } from './components/Skills'
@@ -14,7 +14,6 @@ function App() {
 
   return (
     <>
-      <Header />
       <SideNav activeId={activeId} onNavigate={scrollToSection} />
 
       <main>
@@ -22,7 +21,7 @@ function App() {
           <Hero />
         </SnapSection>
 
-        <SnapSection id="introduce">
+        <SnapSection id="introduce" className={sectionStyles.introduceOffset}>
           <Introduce />
         </SnapSection>
 
