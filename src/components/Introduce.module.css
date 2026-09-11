@@ -1,6 +1,8 @@
 .introduce {
   width: 100%;
+  max-width: var(--section-body-max-width);
 }
+
 
 .profileRow {
   display: grid;

@@ -59,6 +59,8 @@
   display: flex;
   flex-direction: column;
   gap: 48px;
+  width: 100%;
+  max-width: var(--section-body-max-width);
 }
 
 .stack .heading {
@@ -104,6 +106,7 @@
 
   .stack {
     gap: 18px;
+    max-width: 100%;
   }
 
   .stack .body {

@@ -37,7 +37,7 @@ function App() {
           <ProjectGrid />
         </SnapSection>
 
-        <SnapSection id="education">
+        <SnapSection id="education" className={sectionStyles.last}>
           <EducationEtc />
         </SnapSection>
       </main>

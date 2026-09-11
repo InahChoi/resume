@@ -1,9 +1,10 @@
 .page {
   --section-heading-meta-width: var(--experience-rail-width);
   display: flex;
+  flex: 1;
   flex-direction: column;
-  min-height: calc(100dvh - var(--section-start-offset) - 24px);
   width: 100%;
+  max-width: var(--section-body-max-width);
 }
 
 .sections {
@@ -82,7 +83,7 @@
   justify-content: center;
   width: 100%;
   margin-top: auto;
-  padding: 28px 0 4px;
+  padding: 32px 0 28px;
 }
 
 .copyright {
@@ -95,10 +96,6 @@
 }
 
 @media (max-width: 768px) {
-  .page {
-    min-height: calc(100dvh - var(--header-height) - 16px);
-  }
-
   .sections {
     gap: 36px;
   }
@@ -130,7 +127,7 @@
   }
 
   .footer {
-    padding: 24px 0 0;
+    padding: 28px 0 20px;
   }
 
   .copyright {

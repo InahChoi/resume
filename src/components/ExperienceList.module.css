@@ -1,6 +1,7 @@
 .experience {
   --section-heading-meta-width: var(--experience-rail-width);
   width: 100%;
+  max-width: var(--section-body-max-width);
 }
 
 .total {

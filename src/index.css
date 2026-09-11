@@ -51,7 +51,6 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y proximity;
 }
 
 body {
@@ -101,10 +100,6 @@ a {
 }
 
 @media (max-width: 768px) {
-  html {
-    scroll-snap-type: none;
-  }
-
   :root {
     --shell-padding: 16px;
     --header-height: 56px;
