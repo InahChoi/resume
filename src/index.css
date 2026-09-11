@@ -14,8 +14,9 @@
   --font-display: 'Montserrat', var(--font-body);
 
   --shell-max-width: 1300px;
-  --content-max-width: 1080px;
+  --content-max-width: 1140px;
   --nav-width: calc(var(--shell-max-width) - var(--content-max-width));
+  --content-indent: 56px;
   --shell-padding: 24px;
   --shell-offset: max(var(--shell-padding), calc((100vw - var(--shell-max-width)) / 2));
   --header-height: 64px;
@@ -25,7 +26,7 @@
   --section-title-col: 200px;
   --section-col-gap: 32px;
   --section-title-line-width: calc(var(--section-title-col) + var(--section-col-gap) - 8px);
-  --section-body-max-width: 750px;
+  --section-body-max-width: 850px;
   --section-body-offset: 80px;
   --experience-rail-width: 236px;
 }
@@ -50,13 +51,14 @@
 }
 
 html {
+  font-size: 16px;
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.6;
   color: var(--color-text);
   background-color: var(--color-bg);
@@ -104,10 +106,7 @@ a {
     --shell-padding: 16px;
     --header-height: 56px;
     --section-body-offset: 24px;
-  }
-
-  body {
-    font-size: 15px;
+    --content-indent: 0px;
   }
 }
 

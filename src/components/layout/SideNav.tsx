@@ -1,32 +1,44 @@
-import { useEffect, useId, useState } from 'react'
-import { NAV_SECTIONS } from '../../data/sections'
-import { useTheme, type Theme } from '../../hooks/useTheme'
-import styles from './SideNav.module.css'
+import { useEffect, useId, useState } from 'react';
+import { NAV_SECTIONS } from '../../data/sections';
+import { useTheme, type Theme } from '../../hooks/useTheme';
+import { LAST_UPDATED } from '../../lib/lastUpdated';
+import styles from './SideNav.module.css';
 
 interface SideNavProps {
-  activeId: string
-  onNavigate: (id: string) => void
+  activeId: string;
+  onNavigate: (id: string) => void;
 }
 
 function ThemeToggle({
   theme,
   onSelect,
 }: {
-  theme: Theme
-  onSelect: (theme: Theme) => void
+  theme: Theme;
+  onSelect: (theme: Theme) => void;
 }) {
-  const nextTheme = theme === 'dark' ? 'light' : 'dark'
+  const nextTheme = theme === 'dark' ? 'light' : 'dark';
 
   return (
     <button
       type="button"
       className={styles.themeButton}
       onClick={() => onSelect(nextTheme)}
-      aria-label={nextTheme === 'dark' ? '다크 모드로 전환' : '라이트 모드로 전환'}
+      aria-label={
+        nextTheme === 'dark' ? '다크 모드로 전환' : '라이트 모드로 전환'
+      }
     >
       <span aria-hidden="true">{theme === 'dark' ? '☀️' : '⭐️'}</span>
     </button>
-  )
+  );
+}
+
+function UpdatedLabel({ className }: { className?: string }) {
+  return (
+    <p className={[styles.updated, className].filter(Boolean).join(' ')}>
+      last updated{' '}
+      <time dateTime={LAST_UPDATED.replaceAll('.', '-')}>{LAST_UPDATED}</time>
+    </p>
+  );
 }
 
 function NavList({
@@ -34,9 +46,9 @@ function NavList({
   onNavigate,
   className,
 }: {
-  activeId: string
-  onNavigate: (id: string) => void
-  className?: string
+  activeId: string;
+  onNavigate: (id: string) => void;
+  className?: string;
 }) {
   return (
     <ul className={[styles.list, className].filter(Boolean).join(' ')}>
@@ -53,35 +65,35 @@ function NavList({
         </li>
       ))}
     </ul>
-  )
+  );
 }
 
 export function SideNav({ activeId, onNavigate }: SideNavProps) {
-  const { theme, setTheme } = useTheme()
-  const [menuOpen, setMenuOpen] = useState(false)
-  const menuId = useId()
+  const { theme, setTheme } = useTheme();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuId = useId();
 
   useEffect(() => {
-    if (!menuOpen) return
+    if (!menuOpen) return;
 
-    const previousOverflow = document.body.style.overflow
-    document.body.style.overflow = 'hidden'
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
 
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') setMenuOpen(false)
-    }
+      if (event.key === 'Escape') setMenuOpen(false);
+    };
 
-    window.addEventListener('keydown', onKeyDown)
+    window.addEventListener('keydown', onKeyDown);
     return () => {
-      document.body.style.overflow = previousOverflow
-      window.removeEventListener('keydown', onKeyDown)
-    }
-  }, [menuOpen])
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener('keydown', onKeyDown);
+    };
+  }, [menuOpen]);
 
   const handleNavigate = (id: string) => {
-    setMenuOpen(false)
-    onNavigate(id)
-  }
+    setMenuOpen(false);
+    onNavigate(id);
+  };
 
   return (
     <>
@@ -89,7 +101,10 @@ export function SideNav({ activeId, onNavigate }: SideNavProps) {
         <div className={styles.shell}>
           <div className={styles.panel}>
             <NavList activeId={activeId} onNavigate={onNavigate} />
-            <ThemeToggle theme={theme} onSelect={setTheme} />
+            <div className={styles.panelFooter}>
+              <ThemeToggle theme={theme} onSelect={setTheme} />
+              <UpdatedLabel />
+            </div>
           </div>
         </div>
       </nav>
@@ -99,32 +114,41 @@ export function SideNav({ activeId, onNavigate }: SideNavProps) {
           href="#hero"
           className={styles.logo}
           onClick={(event) => {
-            event.preventDefault()
-            setMenuOpen(false)
-            onNavigate('hero')
+            event.preventDefault();
+            setMenuOpen(false);
+            onNavigate('hero');
           }}
         >
-          INAH.dev
+          inah.dev
         </a>
 
-        <button
-          type="button"
-          className={[styles.hamburger, menuOpen ? styles.hamburgerOpen : undefined]
-            .filter(Boolean)
-            .join(' ')}
-          onClick={() => setMenuOpen((open) => !open)}
-          aria-label={menuOpen ? '메뉴 닫기' : '메뉴 열기'}
-          aria-expanded={menuOpen}
-          aria-controls={menuId}
-        >
-          <span />
-          <span />
-          <span />
-        </button>
+        <div className={styles.mobileActions}>
+          <ThemeToggle theme={theme} onSelect={setTheme} />
+          <button
+            type="button"
+            className={[
+              styles.hamburger,
+              menuOpen ? styles.hamburgerOpen : undefined,
+            ]
+              .filter(Boolean)
+              .join(' ')}
+            onClick={() => setMenuOpen((open) => !open)}
+            aria-label={menuOpen ? '메뉴 닫기' : '메뉴 열기'}
+            aria-expanded={menuOpen}
+            aria-controls={menuId}
+          >
+            <span />
+            <span />
+            <span />
+          </button>
+        </div>
       </header>
 
       <div
-        className={[styles.mobileMenu, menuOpen ? styles.mobileMenuOpen : undefined]
+        className={[
+          styles.mobileMenu,
+          menuOpen ? styles.mobileMenuOpen : undefined,
+        ]
           .filter(Boolean)
           .join(' ')}
         id={menuId}
@@ -136,15 +160,20 @@ export function SideNav({ activeId, onNavigate }: SideNavProps) {
           aria-label="메뉴 닫기"
           onClick={() => setMenuOpen(false)}
         />
-        <div className={styles.mobilePanel} role="dialog" aria-modal="true" aria-label="메뉴">
+        <div
+          className={styles.mobilePanel}
+          role="dialog"
+          aria-modal="true"
+          aria-label="메뉴"
+        >
           <NavList
             activeId={activeId}
             onNavigate={handleNavigate}
             className={styles.mobileList}
           />
-          <ThemeToggle theme={theme} onSelect={setTheme} />
+          <UpdatedLabel className={styles.mobileUpdated} />
         </div>
       </div>
     </>
-  )
+  );
 }

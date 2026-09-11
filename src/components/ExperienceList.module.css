@@ -7,8 +7,8 @@
 .total {
   margin: 0;
   font-family: var(--font-body);
-  font-size: 13px;
-  font-weight: 400;
+  font-size: 0.8125em;
+  font-weight: 600;
   line-height: 1.125rem;
   color: var(--color-accent);
   white-space: nowrap;
@@ -39,7 +39,7 @@
 
 .period {
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 500;
   line-height: 1.4;
   color: var(--color-text);
@@ -48,7 +48,7 @@
 
 .periodEnded {
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 500;
   line-height: 1.4;
   color: var(--color-period-ended);
@@ -76,7 +76,7 @@
 
 .company {
   font-family: var(--font-body);
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 700;
   line-height: 1.4;
   color: var(--color-text);
@@ -85,7 +85,7 @@
 .scopes {
   margin-top: 4px;
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 400;
   letter-spacing: 0.04em;
   color: var(--color-text);
@@ -102,7 +102,7 @@
 
 .projectTitle {
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 1.1em;
   font-weight: 700;
   line-height: 0.5;
 }
@@ -123,7 +123,7 @@
   height: 20px;
   padding: 0 10px;
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 0.8125em;
   font-weight: 400;
   line-height: 1;
   color: var(--color-text);
@@ -137,7 +137,7 @@
   padding-left: 1.15rem;
   list-style: none;
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 0.9375em;
   font-weight: 400;
   line-height: 1.7;
   color: var(--color-text);
@@ -169,7 +169,7 @@
   }
 
   .total {
-    font-size: 12px;
+    font-size: 0.75em;
   }
 
   .list {
@@ -187,11 +187,11 @@
   }
 
   .period {
-    font-size: 13px;
+    font-size: 0.8125em;
   }
 
   .periodEnded {
-    font-size: 12px;
+    font-size: 0.75em;
   }
 
   .companyRow {
@@ -200,11 +200,11 @@
   }
 
   .company {
-    font-size: 17px;
+    font-size: 1.0625em;
   }
 
   .scopes {
-    font-size: 12px;
+    font-size: 0.75em;
   }
 
   .projects {
@@ -214,7 +214,8 @@
   }
 
   .projectTitle {
-    font-size: 14px;
+    font-size: 0.975em;
+    margin: 0.8em 0;
   }
 
   .tags {
@@ -225,12 +226,12 @@
   .tag {
     height: 18px;
     padding: 0 8px;
-    font-size: 11px;
+    font-size: 0.6875em;
   }
 
   .highlights {
     margin-top: 8px;
-    font-size: 13px;
+    font-size: 0.895em;
     line-height: 1.6;
   }
 

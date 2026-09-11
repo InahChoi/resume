@@ -5,7 +5,7 @@ export function Header() {
     <header className={styles.header}>
       <div className={styles.shell}>
         <a href="#hero" className={styles.logo}>
-          INAH.dev
+          inah.dev
         </a>
       </div>
     </header>

@@ -81,7 +81,7 @@
   gap: 2px;
   margin: 0;
   font-family: var(--font-display);
-  font-size: 12px;
+  font-size: 0.75em;
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: 0.02em;
@@ -97,7 +97,7 @@
 .techText {
   margin: 0;
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 0.8125em;
   font-weight: 400;
   line-height: 1.5;
   color: var(--color-text-muted);
@@ -111,7 +111,7 @@
   width: fit-content;
   margin-top: 4px;
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 0.8125em;
   font-weight: 500;
   color: var(--color-accent);
 }
@@ -137,7 +137,7 @@
 .eyebrow {
   margin: 0;
   font-family: var(--font-display);
-  font-size: 11px;
+  font-size: 0.6875em;
   font-weight: 600;
   letter-spacing: 0.16em;
   color: var(--color-accent);
@@ -146,7 +146,7 @@
 .title {
   margin-top: 10px;
   font-family: var(--font-body);
-  font-size: 32px;
+  font-size: 2em;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -157,7 +157,7 @@
   margin-top: 12px;
   max-width: 48ch;
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 0.9375em;
   font-weight: 400;
   line-height: 1.65;
   color: var(--color-text-muted);
@@ -170,7 +170,7 @@
 
 .paragraph {
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 0.9375em;
   font-weight: 400;
   line-height: 1.75;
   color: #fff;
@@ -200,7 +200,7 @@
   padding-left: 12px;
   border-left: 3px solid var(--color-accent);
   font-family: var(--font-body);
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 700;
   line-height: 1.35;
   color: #fff;
@@ -215,7 +215,7 @@
   padding: 16px 18px;
   overflow-x: auto;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 12.5px;
+  font-size: 0.78125em;
   line-height: 1.65;
   color: #e8eaee;
   background: #0c0f14;
@@ -243,7 +243,7 @@
 .codeNote {
   margin-top: 8px;
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 0.8125em;
   line-height: 1.5;
   color: var(--color-text-muted);
 }
@@ -253,7 +253,7 @@
   padding: 0;
   list-style: none;
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 0.9375em;
   line-height: 1.7;
   color: #fff;
   word-break: keep-all;
@@ -319,7 +319,7 @@
   height: 34px;
   padding: 0 14px;
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 0.8125em;
   font-weight: 500;
   color: #fff;
   background: rgba(255, 255, 255, 0.04);
@@ -384,7 +384,7 @@
 
   .techText {
     max-width: 100%;
-    font-size: 12px;
+    font-size: 0.75em;
     word-break: keep-all;
     overflow-wrap: anywhere;
   }
@@ -398,12 +398,12 @@
   }
 
   .title {
-    font-size: 24px;
+    font-size: 1.5em;
     padding-right: 36px;
   }
 
   .summary {
-    font-size: 14px;
+    font-size: 0.875em;
   }
 
   .body,
@@ -422,11 +422,11 @@
   }
 
   .heading {
-    font-size: 17px;
+    font-size: 1.0625em;
   }
 
   .paragraph,
   .list {
-    font-size: 14px;
+    font-size: 0.875em;
   }
 }

@@ -46,6 +46,7 @@
   width: 100%;
   max-width: var(--shell-max-width);
   margin: 0 auto;
+  padding-left: var(--content-indent);
   padding-right: var(--nav-width);
   min-width: 0;
   overflow-wrap: break-word;

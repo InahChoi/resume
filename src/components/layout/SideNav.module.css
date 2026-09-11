@@ -20,7 +20,7 @@
 .panel {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: stretch;
   gap: 28px;
   pointer-events: auto;
 }
@@ -28,6 +28,7 @@
 .list {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 28px;
   margin: 0;
   padding: 0;
@@ -37,8 +38,8 @@
 .list button {
   display: inline-block;
   font-family: var(--font-display);
-  font-size: 15px;
-  font-weight: 300;
+  font-size: 0.9375em;
+  font-weight: 500;
   letter-spacing: 0;
   color: var(--color-text);
   padding-bottom: 6px;
@@ -47,7 +48,7 @@
     color 220ms ease,
     border-color 220ms ease,
     font-weight 220ms ease;
-  text-align: right;
+  text-align: left;
   white-space: nowrap;
 }
 
@@ -67,19 +68,42 @@
   justify-content: center;
   width: 32px;
   height: 32px;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1;
-  border: 1px solid rgb(123 123 123 / 70%);
+  border: none;
   border-radius: 8px;
+  box-shadow: 1px 0px 11px rgb(207 207 207 / 55%);
   opacity: 0.9;
   transition:
     opacity 0.2s ease,
-    border-color 0.2s ease;
+    box-shadow 0.2s ease;
+}
+
+:global([data-theme='light']) .themeButton {
+  box-shadow: 1px 0px 15px #d1d1d1;
 }
 
 .themeButton:hover {
   opacity: 1;
-  border-color: rgb(123 123 123 / 70%);
+}
+
+.panelFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.updated {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 0.75em;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.4;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  text-align: left;
 }
 
 .mobileHeader,
@@ -110,10 +134,16 @@
 
   .logo {
     font-family: var(--font-display);
-    font-size: 1.0625rem;
+    font-size: 1.0625em;
     font-weight: 600;
     letter-spacing: 0.02em;
     color: var(--color-text);
+  }
+
+  .mobileActions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 
   .hamburger {
@@ -219,6 +249,10 @@
 
   .mobileList button {
     text-align: left;
-    font-size: 16px;
+    font-size: 1em;
+  }
+
+  .mobileUpdated {
+    text-align: left;
   }
 }

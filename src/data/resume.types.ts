@@ -1,5 +1,6 @@
 export interface Hero {
-  welcome: string
+  eyebrow: string
+  eyebrowHover: string
   name: string
   tagline: string
 }

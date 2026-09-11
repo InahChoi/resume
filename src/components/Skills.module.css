@@ -16,7 +16,7 @@
 
 .category {
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 1.1em;
   font-weight: 600;
   line-height: 25px;
   color: var(--color-text);
@@ -38,7 +38,7 @@
   height: 25px;
   padding: 0 10px;
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 0.8125em;
   font-weight: 400;
   line-height: 1;
   color: var(--color-accent);
@@ -57,7 +57,7 @@
   }
 
   .category {
-    font-size: 14px;
+    font-size: 0.875em;
     line-height: 22px;
   }
 
@@ -68,6 +68,6 @@
   .tag {
     height: 22px;
     padding: 0 8px;
-    font-size: 12px;
+    font-size: 0.75em;
   }
 }
