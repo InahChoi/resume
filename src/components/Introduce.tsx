@@ -40,6 +40,15 @@ async function copyText(value: string) {
   document.body.removeChild(input)
 }
 
+function renderParagraph(text: string) {
+  return text.split(/(\*\*[^*]+\*\*)/g).map((part, index) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      return <strong key={index}>{part.slice(2, -2)}</strong>
+    }
+    return part
+  })
+}
+
 export function Introduce() {
   const { name, role, email, githubHandle, githubUrl, imageUrl, paragraphs } =
     resume.introduce
@@ -102,7 +111,7 @@ export function Introduce() {
         bodyClassName={styles.paragraphs}
       >
         {paragraphs.map((paragraph) => (
-          <p key={paragraph}>{paragraph}</p>
+          <p key={paragraph}>{renderParagraph(paragraph)}</p>
         ))}
       </SectionBlock>
     </div>

@@ -109,6 +109,11 @@
   word-break: keep-all;
 }
 
+.paragraphs strong {
+  font-weight: 700;
+  color: var(--color-text);
+}
+
 @media (max-width: 768px) {
   .profileRow {
     grid-template-columns: 1fr;
