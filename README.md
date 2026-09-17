@@ -1,119 +1,150 @@
 # 최인아 | Backend · Fullstack developer
-> Node.js(Express)·MySQL 기반 API/백오피스와 AWS 인프라를 운영하는 백엔드 개발자입니다.
 
-- 서비스 운영 환경에서 발생하는 트러블슈팅 이슈와 사용자 경험 개선을 우선화합니다.
-- 안정적인 서버 구조, 유지보수를 위한 함수 컴포넌트화 개발을 지향합니다.
-- 팀원들과 초기 아키텍쳐 및 방향성을 회의하고 함께 개발하는 것에 큰 가치를 둡니다.
+> 안정적인 API와 인프라 설계를 지향하고, 현재는 풀스택으로 시야를 넓혀가고 있는 개발자 최인아입니다.
+
+- 실제 트래픽 속 안정적 운영을 위해 서비스의 구조 이해에 시간을 할애하여 설계를 시작합니다.
+- Node.js·TypeScript와 AWS를 기반으로 서비스 기획부터 Database 모델링, REST API, 배포·모니터링까지 백엔드 전반을 경험했습니다.
+- 팀원들과 초기 아키텍쳐 및 방향성을 회의하고 함께 만들어가는 것에 큰 가치를 둡니다.
 
 <br>
 
 ## 📟 Tech Stack.
+
 ### Core
+
 <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=Node.js&logoColor=white"> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=TypeScript&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white"> <img src="https://img.shields.io/badge/EJS-B4CA65?style=flat&logo=ejs&logoColor=white"> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=MySQL&logoColor=white">
 
 ### Also
+
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=Python&logoColor=white"> <img src="https://img.shields.io/badge/django-092E20?style=flat&logo=django&logoColor=white"> <img src="https://img.shields.io/badge/mongoDB-47A248?style=flat&logo=MongoDB&logoColor=white"> <img src="https://img.shields.io/badge/php-777BB4?style=flat&logo=php&logoColor=white"> <img src="https://img.shields.io/badge/html5-E34F26?style=flat&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css-1572B6?style=flat&logo=css&logoColor=white">
 
 ### Infra
+
 <img src="https://img.shields.io/badge/Amazon%20EC2-242f3e?style=flat&logo=Amazon%20EC2&logoColor=white"> <img src="https://img.shields.io/badge/Amazon%20RDS-3e4a5b?style=flat&logo=Amazon%20EC2&logoColor=white"> <img src="https://img.shields.io/badge/Amazon%20Lambda-5b6675?style=flat&logo=Amazon%20Lambda&logoColor=white"> <img src="https://img.shields.io/badge/Amazon%20S3-89919c?style=flat&logo=Amazon%20S3&logoColor=white"> <img src="https://img.shields.io/badge/Amazon%20CloudFront-a6aeb9?style=flat&logo=Amazon%20CloudFront&logoColor=white"> <img src="https://img.shields.io/badge/Amazon%20Lightsail-d1dbea?style=flat&logo=Amazon%20Lightsail&logoColor=white"> <img src="https://img.shields.io/badge/pm2-2B037A?style=flat&logo=pm2&logoColor=white"> <img src="https://img.shields.io/badge/nginx-%23009639.svg?style=flat&logo=nginx&logoColor=white">
 
 <br>
 
 ## 🏙 Experience.
-### 주식회사 비스컨애드 | Fullstack Developer | 개발팀
->2026.02 - 현재
-#### 현장 결제 · 체크인 · 명찰 출력
-`KCP` `QR` `Node.js` `EJS` `MySQL` `PHP` `Bixolon WebPrintSDK`
-- 태블릿 전용 KCP 앱 결제를 웹 오픈페이지로 전환해 현장 외에서도 결제가 가능하도록 개발
-- 참가업체·관람객 결제 플로우 분리 및 주문/결제 도메인 확장
-- CMS 결제취소·일자별 매출 집계 구축
-- 관람객 QR 티켓 체크인 API 구현 (재입장 포함)
-- 배지(라벨) 출력을 업체 조회 페이지로 자동화, Bixolon WebPrintSDK 연동
-  
-#### 참가비 청구 · 세금계산서 · 미납 배치
-`KCP` `Popbill` `Nodemailer` `node-cron` `MySQL`
-- 가구/사이드 부스 인보이스 산정 및 청구 메일 발송
-- 팝빌 세금계산서 발행·조회·취소 API 연동
-- 개막 D-1 미납 잔액 배치 갱신, CMS 결제취소·수동입금 처리
-  
-#### 부스 배치도 에디터 개발
-- 전시장·홀 프리셋 기반 부스 등급/시설 배치 UI 구축
 
-#### B2B 통합 CMS · 운영 자동화
-`Node.js` `JavaScript` `TypeScript` `EJS` `MySQL` `AWS S3` `Tailwind CSS` `PM2`
-- 가구/사이드 부스·관람객·이벤트 목록/상세/저장 CMS 구축
-- 전시장·홀 프리셋 기반 부스 등급/시설 배치도 에디터 구축
-- 현장 경품 추첨(당첨 수량·일별 한도) 및 계약/안내 알림톡 연동
-- S3 업로드 키 표준화 및 이미지 변환 파이프라인
-- 뿌리오 SMS·카카오 알림톡(즉시/예약) 발송, GA4 일별 방문 집계 배치
+### 주식회사 비스컨애드 | Frontend · Backend · App
 
-#### 카페24 → AWS 인프라 이전 · 공개 API 이관
-`EC2` `RDS` `S3` `CloudFront` `WAF` `Lightsail` `WordPress` `PHP` `Node.js`
-- 카페24 웹호스팅/DB를 EC2·RDS로 이전
-- 관리자 Pure PHP 기능을 Node.js REST API + EJS CMS로 단계적 이관
-- Lightsail로 전시별 서브도메인 WordPress 분리 운영
-- 참가신청·사전등록·SMS 인증 공개 REST API 제공 및 WordPress embed 연동
+> 2026.02 - 현재
+
+#### 전시회 서비스 프론트, 백엔드 개발
+
+`KCP API` `QR` `Node.js` `TypeScript` `Tailwind CSS` `EJS` `MySQL` `Bixolon WebPrintSDK` `PM2` `Nginx`
+
+- KCP 앱 결제 → 웹 오픈페이지 전환으로 오프사이트 결제 지원
+- Exhibitor/Visitor 결제 도메인 분리 및 주문·정산 플로우 확장
+- 결제 취소·일별 매출 집계 API 구현
+- QR 기반 관람객 입장 체크인 API 구현
+- Bixolon WebPrintSDK 연동 명찰·라벨 자동 출력 플로우 구현
+- 전시장 프리셋 기반 부스 등급·배치도 에디터(CMS) 구축
+- S3 객체 키 규칙 표준화·이미지 변환 업로드 파이프라인 구축
+- 12개 도메인 · REST API 300+ 엔드포인트 설계·구현
+
+#### B2B 비용 청구 · GA4 · 청구 미납 스케줄러 개발
+
+`Popbill API` `Nodemailer` `node-cron` `GA4 API`
+
+- Popbill·Nodemailer 기반 청구서 산출·메일 발송 자동화
+- node-cron 기반 전시 개막 D-1 미납 잔액 갱신 배치
+- GA4 API 연동 리포트 데이터(페이지뷰·신규 사용자) 자동 수집
+- 결제 완료 트리거 Popbill 세금계산서 자동 발행
+
+#### 카페24 웹호스팅/DB를 EC2·RDS로 이전
+
+`WordPress` `PHP` `CloudFront` `Lightsail`
+
+- Legacy PHP 관리 기능 → Node.js REST API + EJS CMS 단계 마이그레이션
+- Lightsail·CloudFront 기반 전시 멀티사이트 WordPress 운영 아키텍처 설계
+- WordPress 커스텀 HTML embed·REST API 연동
 
 ---
-   
-### 주식회사 뉴로서킷 | Backend Developer | 개발 연구팀
+
+### 주식회사 뉴로서킷 | Backend · App
+
 > 2021.11 - 2023.10
-- 모바일 앱·관리자 CMS 백엔드 단독/소수 인원 담당
-- REST API·DB 설계, AWS 운영, Firebase Push, 성능·배포 안정화
-  
-#### 오롯플러스 App · CMS (임산부 건강·위험군 관리)
-`TypeScript` `Node.js` `Sequelize` `MariaDB` `AWS EC2` `AWS RDS` `AWS Lambda` `Firebase`
-- 초기 기획 참여, ERD·REST API 설계 및 관리자 CMS 개발 (Client 4 / Backend 1)
-- Firebase Push·예약 스케줄링 시스템 구축, EC2 기반 서버 운영 환경 구성
-- 복잡 Join 조회에 View Table 적용, 응답 속도 2초 → 0.5초
-- 이미지 업로드 처리를 AWS Lambda로 분리해 Node 서버 CPU 부하 감소
-- Supertest 기반 API 테스트 자동화로 배포 전 오류 검증 체계 구축
 
-  
-#### 바야바즈 App v1/v2 (두피 AI 셀프케어)
-`JavaScript` `Node.js` `Sequelize` `MariaDB` `AWS EC2` `AWS RDS` `Nginx` `EJS` `Firebase`
-- 와이어프레임·기획 참여, ERD·API·챌린지/포인트 시스템 개발 (Backend 2 → 1)
-- AI 분석을 비동기 처리 + 완료 Push 알림으로 전환, 체감 대기 20초 → 1초
-- Controller/Service Layer 분리로 유지보수·기능 확장 구조 정리
-- Firebase Push·Webhook, Winston 로그 정책·PM2 운영 환경 구축
+#### 모바일 앱·관리자 CMS 개발 [오롯플러스]
 
+`Node.js` `TypeScript` `MariaDB` `Firebase` `AWS Lambda` `AWS EC2` `AWS RDS` `PM2` `Nginx`
 
-#### 카미나비 라이트 App · CMS (REVE21 · 일본)
-`JavaScript` `Node.js` `MongoDB` `Mongoose` `JWT` `AWS EC2` `MongoDB Atlas` `Nginx` `EJS`
-- 일본 국외 개인정보 비저장 정책 대응 디바이스 UUID + JWT 자동 로그인 설계
-- MongoDB Document 구조 설계, 관리자 CMS 개발 및 서버 운영 (Client 3 / Backend 2)
-- PM2·Nginx 기반 EC2 운영 환경 구축
+- ERD·REST API 설계, Admin CMS 백엔드 개발
+- FCM 예약 발송·스케줄링 API 구현
+- EC2·RDS·Nginx·PM2 기반 운영 배포 환경 구성
+- MariaDB View 도입으로 복잡 JOIN API 응답 2초 → 0.5초(75% 개선)
+- Lambda·S3 기반 이미지 리사이즈 파이프라인 구축
+- node-cron 기반 FCM 배치 푸시 14종 스케줄링·운영
+- Supertest로 API 회귀 테스트 자동화, 배포 전 오류 검증
+- 16개 도메인 · REST API 200+ 엔드포인트 설계·구현
+
+#### 모바일 앱·관리자 CMS 백엔드 개발 [바야바즈 App v1/v2/v3]
+
+`Node.js` `JavaScript` `MariaDB` `Firebase` `AWS EC2` `AWS RDS` `PM2` `Nginx`
+
+- 탈모 케어 앱(v1–v3, 3차 리뉴얼) 백엔드 API 설계·개발
+- AI 분석 비동기 큐 + FCM 완료 알림으로 체감 대기 20초 → 1초
+- Controller-Service 레이어 분리 및 도메인 모듈화
+- REST 리소스 구조 전면 개편, API 버전(/api/v1) 도입
+- 19개 도메인 · REST API 100+ 엔드포인트 설계·구현
+
+#### 모바일 앱 백엔드 개발 [카미나비 라이트]
+
+`Node.js` `JavaScript` `MongoDB` `Firebase` `AWS EC2` `Atlas` `PM2` `Nginx`
+
+- 일본 개인정보 비저장 규제 대응 Device UUID + JWT 자동 로그인 설계
+- Mongoose 기반 12개 컬렉션 스키마 설계
+- Routes-Service-Model 3-tier 아키텍처 적용
+- Cron 기반 FCM 미션 푸시(30분 주기) 스케줄링
+- 9개 도메인 · REST API 40+ 엔드포인트 설계·구현
 
 ---
 
-### 주식회사 아약 | Backend Developer | 개발팀
+### 주식회사 아약 | Backend
+
 > 2021.08 – 2021.09
-`TypeScript` `Node.js` `MongoDB` `Mongoose`
-- 회원가입·로그인 및 영양제 상품 카탈로그 REST API 설계·구현
-- 문항별 선택 점수 합산 로직으로 프로필 점수에 맞는 영양제 추천 API 구현
-- 프론트와 기획·스펙 협의, apidocs 문서화 및 Postman으로 API 연동 협업
+
+#### 건강 Q&A 기반 맞춤 영양제 추천 웹 서비스
+
+`Node.js` `TypeScript` `MongoDB` `Nodemailer`
+
+- Mongoose 기반 6개 컬렉션 스키마·인덱스 설계
+- 17개 건강 카테고리 Q&A 진단 → 영양제 매칭 추천 API 설계·구현
+- Multer 이미지 업로드·Nodemailer 결과 메일 발송 API 구현
+- REST API 명세(apidocs) 작성 및 프론트엔드 연동 지원
+- 8개 도메인 · REST API 30+ 엔드포인트 단독 설계·구현
 
 ---
 
-### 디뉴로(주) | Backend Developer | 개발팀 인턴
+### 디뉴로(주) | Backend
+
 > 2021.04 - 2021.05
+
+#### 투자성향 진단 기반 맞춤 포트폴리오 추천 웹 서비스
+
 `Python` `Django` `MySQL`
-- 사용자 투자 성향 저장 및 성향 기반 추천 포트폴리오 조회 API 개발
-- 사용자가 채택한 포트폴리오 저장 API 구현
-- 백엔드 2인 협업으로 API 스펙 정의 및 Django 기반 데이터 연동
+
+- 투자 성향 저장·성향별 포트폴리오 조회 REST API 설계·구현
+- MySQL 39개 테이블 ERD·스키마 설계
+- 다차원 투자성향 점수 Lookup → RiskGrade 산출 로직 구현
+- RapidAPI 펀드 NAV 수집·적재 배치 파이프라인 구축
+- JWT 인증/인가 및 구현
+- 3개 도메인 · REST API 6개 엔드포인트 설계·구현
 
 <br>
 
-
 ## 🏢 Education.
+
 서울디지털대학교 | 소프트웨어학과 전공 | 2021 - 2025 졸업
 
 <br>
 
-## 📇 Contact. 
-|  |  |
-| --- | --- |
+## 📇 Contact.
+
+|            |                             |
+| ---------- | --------------------------- |
 | **GitHub** | https://github.com/InahChoi |
-| **Email** | choiinah@kakao.com |
+| **Email**  | choiinah@kakao.com          |
 
 <br>
