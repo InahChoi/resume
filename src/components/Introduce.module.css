@@ -18,12 +18,10 @@
 .imagePlaceholder {
   display: block;
   width: 100%;
-  aspect-ratio: 1;
+  aspect-ratio: 1086 / 1448;
   object-fit: cover;
   object-position: center top;
   border-radius: 20px;
-  border: 1px solid #d7d7d7;
-  background: var(--color-surface);
   box-sizing: border-box;
   box-shadow: 0 0px 16px rgb(134 134 134 / 22%);
 }
