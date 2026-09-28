@@ -208,7 +208,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                     {block.items.map((item) => (
                       <li key={item.title}>
                         <strong>{item.title}</strong>
-                        <span className={styles.listSep}>—</span>
+                        <span className={styles.listSep}>:</span>
                         {renderInlineCode(item.description, styles.inlineCode)}
                       </li>
                     ))}

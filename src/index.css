@@ -29,6 +29,17 @@
   --section-body-max-width: 850px;
   --section-body-offset: 80px;
   --experience-rail-width: 236px;
+
+  --color-overlay: rgba(6, 8, 12, 0.78);
+  --color-modal-bg: #15181d;
+  --color-modal-aside: rgba(0, 0, 0, 0.22);
+  --color-modal-line: rgba(255, 255, 255, 0.08);
+  --color-modal-control: rgba(255, 255, 255, 0.18);
+  --color-modal-chip: rgba(255, 255, 255, 0.04);
+  --color-code-bg: #0c0f14;
+  --color-code-text: #e8eaee;
+  --color-token-string: #b6e07a;
+  --color-token-comment: #6b7480;
 }
 
 [data-theme='light'] {
@@ -42,6 +53,17 @@
   --color-period-ended: #6b7280;
   --color-dot-ended: #9aa0a6;
   --color-title-line: rgba(21, 24, 29, 0.35);
+
+  --color-overlay: rgba(21, 24, 29, 0.45);
+  --color-modal-bg: #ffffff;
+  --color-modal-aside: #f4f6f8;
+  --color-modal-line: rgba(21, 24, 29, 0.1);
+  --color-modal-control: rgba(21, 24, 29, 0.16);
+  --color-modal-chip: #f4f6f8;
+  --color-code-bg: #f3f5f8;
+  --color-code-text: #15181d;
+  --color-token-string: #3d7a1a;
+  --color-token-comment: #6b7280;
 }
 
 *,

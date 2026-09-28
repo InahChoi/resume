@@ -1,6 +1,6 @@
 import type { Resume } from './resume.types';
-// import projectThumb from '../assets/hero.png';
 import profileImage from '../assets/profile.png';
+import ytmusicThumb from '../assets/projects/pj-YTMusic-playlist-shuffler.jpg';
 
 export const resume: Resume = {
   hero: {
@@ -221,6 +221,97 @@ export const resume: Resume = {
     },
   ],
   projects: [
+    {
+      id: 'ytmusic-playlist-shuffler',
+      title: 'YTMusic Playlist Shuffler',
+      summary:
+        'YouTube Music 대용량 재생목록을 무작위로 재정렬하고, 원본 또는 새 목록에 동기화하는 Python CLI',
+      imageUrl: ytmusicThumb,
+      techStack: ['Python', 'ytmusicapi', 'python-dotenv'],
+      detail: {
+        namespace: 'InahChoi/',
+        slug: 'ytmusic-playlist-shuffler',
+        displayName: 'YTMusic Playlist Shuffler',
+        techLabel: 'PYTHON · YTMUSICAPI',
+        githubUrl: 'https://github.com/InahChoi/ytmusic-playlist-shuffler',
+        links: [
+          {
+            kind: 'github',
+            label: 'GitHub',
+            href: 'https://github.com/InahChoi/ytmusic-playlist-shuffler',
+          },
+        ],
+        body: [
+          {
+            type: 'paragraph',
+            text: '유튜브 뮤직의 공식 API 할당량 제한을 넘어, 대용량 재생목록의 곡 순서를 무작위로 재정렬하고 원본 플레이리스트에 동기화하는 Python CLI입니다.',
+          },
+          {
+            type: 'heading',
+            text: 'Key Features',
+          },
+          {
+            type: 'list',
+            items: [
+              {
+                title: 'True Shuffle',
+                description:
+                  '유튜브 뮤직 앱의 편향된 셔플 대신, 로컬에서 순서를 무작위로 다시 만듭니다.',
+              },
+              {
+                title: 'Post-Shuffle Dedup',
+                description:
+                  '셔플 직후 같은 `videoId`를 등장 순서는 유지한 채 제거합니다. 배치 업로드 중 중복 때문에 곡이 빠지는 일을 줄입니다.',
+              },
+              {
+                title: 'Large Playlists',
+                description:
+                  '공식 Data API 일일 할당량에 막히지 않고, 플랫폼 상한인 최대 5,000곡까지 무작위로 재정렬합니다.',
+              },
+              {
+                title: 'Two Modes',
+                description:
+                  '실행할 때 기존 주소를 유지하며 덮어쓰는 방법과, 원본은 두고 `[원본 이름] (🔀 Shuffled)` 복사본을 만드는 방법을 선택할 수 있습니다.',
+              },
+              {
+                title: 'Batch Sync',
+                description:
+                  '100곡 단위로 나누고 배치 사이에 간격을 두어, 한 번에 생성할 때 생기는 저장량 누락을 방지합니다.',
+              },
+              {
+                title: 'Auto Backup',
+                description:
+                  '덮어쓰기 전 `playlist_backup.json`을 만들어 원본이 지워지는 경우에 대비합니다.',
+              },
+            ],
+          },
+          {
+            type: 'heading',
+            text: 'The Problem',
+          },
+          {
+            type: 'paragraph',
+            text: 'YouTube Data API v3는 곡을 추가하거나 수정할 때 건당 50유닛을 씁니다. 300곡을 한 번 재정렬하면 약 15,000유닛이 필요해 일일 기본 제공량 10,000유닛을 넘기고, 5,000곡은 약 250,000유닛이라 공식 API만으로는 자유도가 많이 떨어집니다.',
+          },
+          {
+            type: 'paragraph',
+            text: '300곡 이상을 한 요청으로 보내면 YouTube Data API 서버가 간헐적으로 요청을 버리기도 하고, 잘게 나눠 연속으로 요청 시에도 앞 100곡 이후가 빠지는 경우가 있습니다. 또한 `add_playlist_items` API는 기본값에서 배치 안 곡이 이미 목록에 있으면 그 요청 전체를 거절합니다. 같은 `videoId`가 셔플 뒤 다른 배치에 걸리면 그 100곡이 통째로 유실됩니다.',
+          },
+          {
+            type: 'heading',
+            text: 'The Solution',
+          },
+          {
+            type: 'paragraph',
+            text: '공식 API 대신 세션 기반의 `ytmusicapi`로 재생목록을 읽고 다시 씁니다. 로컬에서 순서를 섞은 뒤 100곡씩 나누어 반영하고, 배치 사이에 대기 시간을 두어 대량 전송 중 누락을 줄였습니다.',
+          },
+          {
+            type: 'paragraph',
+            text: '업로드 직전에는 정렬 순서를 유지한 채 `videoId` 중복을 제거합니다. 제거한 개수는 로그로 확인할 수 있고, 덮어쓰기 모드에서는 작업 전에 로컬 백업을 남깁니다.',
+          },
+        ],
+      },
+    },
     // {
     //   id: 'url-shot',
     //   title: 'URL Shot',
