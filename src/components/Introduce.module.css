@@ -18,7 +18,7 @@
 .imagePlaceholder {
   display: block;
   width: 100%;
-  aspect-ratio: 1086 / 1448;
+  aspect-ratio: 1102 / 1427;
   object-fit: cover;
   object-position: center top;
   border-radius: 20px;
@@ -104,11 +104,17 @@
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  font-weight: 500;
   word-break: keep-all;
 }
 
-.paragraphs strong {
-  font-weight: 700;
+.lead {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1em;
+  font-weight: 600;
+  line-height: inherit;
+  letter-spacing: 0;
   color: var(--color-text);
 }
 

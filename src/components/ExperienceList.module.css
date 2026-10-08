@@ -137,8 +137,8 @@
   padding-left: 1.15rem;
   list-style: none;
   font-family: var(--font-body);
-  font-size: 0.9375em;
-  font-weight: 400;
+  font-size: 1.0625em;
+  font-weight: 500;
   line-height: 1.7;
   color: var(--color-text);
   word-break: keep-all;
@@ -231,7 +231,8 @@
 
   .highlights {
     margin-top: 8px;
-    font-size: 0.895em;
+    font-size: 1em;
+    font-weight: 500;
     line-height: 1.6;
   }
 

@@ -1,5 +1,5 @@
 import type { Resume } from './resume.types';
-import profileImage from '../assets/profile.png';
+import profileImage from '../assets/profile-bg-white.png';
 import ytmusicThumb from '../assets/projects/pj-YTMusic-playlist-shuffler.jpg';
 
 export const resume: Resume = {
@@ -18,9 +18,9 @@ export const resume: Resume = {
     githubUrl: 'https://github.com/InahChoi',
     imageUrl: profileImage,
     paragraphs: [
-      '**서비스의 구조를 이해 및 설계하고, 실제 트래픽 속에서 안정적 운영을 목표로 합니다.**',
-      'Node.js·TypeScript와 AWS를 기반으로 서비스 기획부터 Database 모델링, REST API, 배포·모니터링까지 백엔드 전반을 경험했습니다. 결제·정산·푸시·배치 등 핵심 도메인을 구축하고, Database View와 비동기 처리 등을 활용해 **성능과 운영 안정성을 개선하는 개발**을 해왔습니다.',
-      '최근에는 React·NestJS까지 영역을 확장하며 **백엔드를 넘어 서비스 전체의 구조와 사용자 경험을 함께 고민하는 풀스택 개발자**를 지향하고 있습니다.',
+      '서비스의 구조를 이해 및 설계하고, 실제 트래픽 속에서 안정적 운영을 목표로 합니다.',
+      'Node.js·TypeScript와 AWS를 기반으로 서비스 기획부터 Database 모델링, REST API, 배포·모니터링까지 백엔드 전반을 경험했습니다. 결제·정산·푸시·배치 등 핵심 도메인을 구축하고, Database View와 비동기 처리 등을 활용해 성능과 운영 안정성을 개선하는 개발을 해왔습니다.',
+      '최근에는 React·NestJS까지 영역을 확장하며 백엔드를 넘어 서비스 전체의 구조와 사용자 경험을 함께 고민하는 풀스택 개발자를 지향하고 있습니다.',
     ],
   },
   skills: [

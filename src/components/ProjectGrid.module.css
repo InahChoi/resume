@@ -89,8 +89,8 @@
 
 @media (max-width: 768px) {
   .grid {
-    grid-template-columns: 1fr;
-    gap: 28px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 16px;
   }
 
   .cardTitle {
@@ -100,7 +100,7 @@
 
   .cardSummary {
     margin-top: 6px;
-    font-size: 0.75em;
+    font-size: 0.875em;
   }
 
   .more {

@@ -1,6 +1,6 @@
 export interface SectionItem {
-  id: string
-  label: string
+  id: string;
+  label: string;
 }
 
 export const SECTIONS: SectionItem[] = [
@@ -10,6 +10,6 @@ export const SECTIONS: SectionItem[] = [
   { id: 'experience', label: 'EXPERIENCE' },
   { id: 'projects', label: 'PROJECT' },
   { id: 'education', label: 'EDUCATION & ETC' },
-]
+];
 
-export const NAV_SECTIONS = SECTIONS.filter((section) => section.id !== 'hero')
+export const NAV_SECTIONS = SECTIONS.filter((section) => section.id !== 'hero');
